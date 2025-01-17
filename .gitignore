@@ -174,3 +174,5 @@ cython_debug/
 #images
 
 images/
+
+preprocessing_credentials.json
