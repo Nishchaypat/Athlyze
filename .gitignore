@@ -178,3 +178,5 @@ images/
 preprocessing_credentials.json
 
 embedded_results.json
+
+aggregated_results_resistant.json
