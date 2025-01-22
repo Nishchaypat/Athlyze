@@ -184,3 +184,7 @@ aggregated_results_resistant.json
 embedded_results_resistant.json
 
 aggregated_results.json
+
+formatted_embeddings_input_nutrition.json
+
+formatted_embeddings_input_resistant.json
