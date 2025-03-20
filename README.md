@@ -85,7 +85,6 @@ Athlyze employs a three-step research methodology:
 * TensorFlow
 * PyTorch
 * Streamlit
-* React
 
 ## Project Timeline
 * Week 2 [January 21 – January 27]: Study Agentic RAG methods
