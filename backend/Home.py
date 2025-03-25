@@ -2,7 +2,7 @@ import streamlit as st
 
 st.set_page_config(page_title="Athlyze", page_icon="/Users/npatel237/Athlyze/backend/public/favicon.svg", layout="wide")
 
-st.title("Welcome to Athlyze! 🚀")
+st.title("Welcome to Athlyze!")
 st.write("Navigate using the sidebar to explore different pages.")
 
 feature_list = [
