@@ -10,7 +10,8 @@ experience = st.selectbox("Experience Level", ["Beginner", "Intermediate", "Adva
 
 notes = st.text_area("Notes", placeholder="""Demographic: I am a 22 year old female. I am approximately 4'11'' and 128 lbs.  
 Dietary Notes: I am a pure vegetarian, my primary sources of protein are tofu, yogurt etc.
-Activity: I am very active I want workout for 3 days a week. I have access to limited gym tools.""")
+Activity: I am very active I want workout for 3 days a week. I have access to limited gym tools.
+Possible Limitations: I cannot each soy, I have leg injury so I cannot do heavy leg workouts.""")
 
 goal = st.text_area("Fitness Goal", placeholder="""Gain: I want to gain strength and some definition in my abs and legs. 
 I really want to get good ass and butt. Lose: I want to lose fat in my thigh region, torso region, and my upper arm region""")
@@ -25,5 +26,4 @@ if st.button("Generate My Plan"):
     st.subheader("Your AI-Powered Plan")
     st.write(f"🎯 **Goal:** {goal}")
     st.write(f"🔥 **Experience Level:** {experience}")
-    st.write(f"🚧 **Limitations:** {limitations if limitations else 'None'}")
     st.write("Your training and nutrition plan has been tailored to your needs.")

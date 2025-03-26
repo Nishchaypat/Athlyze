@@ -61,7 +61,7 @@ st.markdown("""
 def load_training_plan():
     """Load the training plan from the JSON file."""
     try:
-        file_path = "/Users/npatel237/Athlyze/sample_json/test1_flow.json"
+        file_path = "/Users/npatel237/Athlyze/backend/database/training_schedule.json"
         if os.path.exists(file_path):
             with open(file_path, 'r') as file:
                 return json.load(file)
