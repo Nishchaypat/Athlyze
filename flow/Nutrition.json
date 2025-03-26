@@ -14,7 +14,7 @@
             "template": {
               "_type": "Component",
               "api_key": {
-                "load_from_db": true,
+                "load_from_db": false,
                 "required": true,
                 "placeholder": "",
                 "show": true,
@@ -1048,7 +1048,7 @@
                 "_input_type": "BoolInput"
               },
               "token": {
-                "load_from_db": true,
+                "load_from_db": false,
                 "required": true,
                 "placeholder": "",
                 "show": true,
@@ -1163,15 +1163,15 @@
         "id": "Google Generative AI Embeddings-o7dcw",
         "type": "genericNode",
         "position": {
-          "x": 67.08491493749827,
-          "y": 2279.4705004172224
+          "x": 39.68154549075771,
+          "y": 2378.1226304254888
         },
         "data": {
           "node": {
             "template": {
               "_type": "Component",
               "api_key": {
-                "load_from_db": true,
+                "load_from_db": false,
                 "required": true,
                 "placeholder": "",
                 "show": true,
@@ -1322,7 +1322,7 @@
                 "placeholder": "",
                 "show": true,
                 "name": "template",
-                "value": "You are an expert fitness trainer specializing in evidence-based nutrition planner. Using the scientific research provided below, create a comprehensive, personalized nutrition plan that fits User Profile and the research data\n\nRESEARCH DATABASE:\n{nutrition_data}\n\nUSER PROFILE:\n- Notes: {notes}\n- Goals: {goals}\n\nINSTRUCTIONS:\n1. Analyze the user's notes and goals to create a fully personalized plan\n2. Base all recommendations on scientific evidence from the provided research\n3. Include clear explanations for why each nutrition recommendation was selected\n4. Provide detailed instructions for proper exercise technique\n5. Design a progressive plan that adapts over time as the user advances\n6. Include strategies for tracking progress and making adjustments when needed\n7. Consider any health conditions or limitations mentioned in the user notes\n\nYour response should be comprehensive, scientifically sound, and practical for implementation.",
+                "value": "You are an expert fitness trainer specializing in evidence-based nutrition planner. Using the scientific research provided below, create a comprehensive, personalized nutrition plan that fits User Profile and the research data\n\nRESEARCH DATABASE:\n{nutrition_data}\n\nUSER PROFILE:\n- Notes: {notes}\n- Goals: {goals}\n\nINSTRUCTIONS:\n1. Analyze the user's notes and goals to create a fully personalized plan\n2. Base all recommendations on scientific evidence from the provided research\n3. Include clear explanations for why each nutrition recommendation was selected\n4. Provide detailed instructions for proper exercise technique\n5. Design a progressive plan that adapts over time as the user advances\n6. Include strategies for tracking progress and making adjustments when needed\n7. Consider any health conditions or limitations mentioned in the user notes\n\nYour response should be comprehensive, scientifically sound, and practical for implementation.\n\nVery Important: Make sure to return the response without any ```json```.",
                 "display_name": "Template",
                 "advanced": false,
                 "dynamic": false,
@@ -1659,7 +1659,7 @@
             "template": {
               "_type": "Component",
               "api_key": {
-                "load_from_db": true,
+                "load_from_db": false,
                 "required": true,
                 "placeholder": "",
                 "show": true,
@@ -1839,7 +1839,7 @@
                 "placeholder": "",
                 "show": true,
                 "name": "system_message",
-                "value": "You are an advanced AI assistant specializing in creating scientifically-backed nutrition plans. Your task is to generate a comprehensive Diet Plan in JSON format, tailored to the user's specific details provided below. Each recommendation must be supported by scientific evidence. Ensure the output strictly matches the provided JSON schema and fits within the typical token limits of AI responses.\n\nSchema:\n\n{\n  \"intro\": \"Brief introduction summarizing the objectives and scope of the diet plan.\",\n  \"diet_schedule\": {\n    \"caloric_needs\": {\n      \"daily_calories\": \"\",\n      \"calculation_method\": \"\",\n      \"adjustment_factors\": \"\"\n    },\n    \"macronutrient_distribution\": {\n      \"protein\": \"\",\n      \"carbohydrates\": \"\",\n      \"fats\": \"\",\n      \"explanation\": \"\"\n    },\n    \"daily_meal_plan\": {\n      \"Monday\": {\n        \"breakfast\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        },\n        \"lunch\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        },\n        \"pre_workout\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        },\n        \"dinner\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        }\n      },\n      \"Tuesday\": {\n        \"breakfast\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        },\n        \"lunch\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        },\n        \"pre_workout\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        },\n        \"dinner\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        }\n      },\n      \"Wednesday\": {\n        \"breakfast\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        },\n        \"lunch\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        },\n        \"pre_workout\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        },\n        \"dinner\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        }\n      },\n      \"Thursday\": {\n        \"breakfast\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        },\n        \"lunch\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        },\n        \"pre_workout\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        },\n        \"dinner\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        }\n      },\n      \"Friday\": {\n        \"breakfast\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        },\n        \"lunch\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        },\n        \"pre_workout\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        },\n        \"dinner\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        }\n      },\n      \"Saturday\": {\n        \"breakfast\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        },\n        \"lunch\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        },\n        \"pre_workout\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        },\n        \"dinner\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        }\n      },\n      \"Sunday\": {\n        \"breakfast\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        },\n        \"lunch\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        },\n        \"pre_workout\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        },\n        \"dinner\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        }\n      }\n    }\n    }\n  }\n\n",
+                "value": "You are an advanced AI assistant specializing in creating scientifically-backed nutrition plans. Your task is to generate a comprehensive Diet Plan in JSON format, tailored to the user's specific details provided below. Each recommendation must be supported by scientific evidence. Ensure the output strictly matches the provided JSON schema and fits within the typical token limits of AI responses.\n\nVery Important: Make sure to return the response without any ```json```.\n\nSchema:\n\n{\n  \"intro\": \"Brief introduction summarizing the objectives and scope of the diet plan.\",\n  \"diet_schedule\": {\n    \"caloric_needs\": {\n      \"daily_calories\": \"\",\n      \"calculation_method\": \"\",\n      \"adjustment_factors\": \"\"\n    },\n    \"macronutrient_distribution\": {\n      \"protein\": \"\",\n      \"carbohydrates\": \"\",\n      \"fats\": \"\",\n      \"explanation\": \"\"\n    },\n    \"daily_meal_plan\": {\n      \"Monday\": {\n        \"breakfast\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        },\n        \"lunch\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        },\n        \"pre_workout\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        },\n        \"dinner\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        }\n      },\n      \"Tuesday\": {\n        \"breakfast\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        },\n        \"lunch\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        },\n        \"pre_workout\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        },\n        \"dinner\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        }\n      },\n      \"Wednesday\": {\n        \"breakfast\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        },\n        \"lunch\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        },\n        \"pre_workout\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        },\n        \"dinner\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        }\n      },\n      \"Thursday\": {\n        \"breakfast\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        },\n        \"lunch\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        },\n        \"pre_workout\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        },\n        \"dinner\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        }\n      },\n      \"Friday\": {\n        \"breakfast\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        },\n        \"lunch\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        },\n        \"pre_workout\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        },\n        \"dinner\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        }\n      },\n      \"Saturday\": {\n        \"breakfast\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        },\n        \"lunch\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        },\n        \"pre_workout\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        },\n        \"dinner\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        }\n      },\n      \"Sunday\": {\n        \"breakfast\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        },\n        \"lunch\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        },\n        \"pre_workout\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        },\n        \"dinner\": {\n          \"name\": \"\",\n          \"calories\": \"\",\n          \"macros\": {\n            \"protein\": \"\",\n            \"carbs\": \"\",\n            \"fats\": \"\"\n          },\n          \"ingredients\": [],\n          \"alternatives\": []\n        }\n      }\n    }\n    }\n  }\n\n",
                 "display_name": "System Message",
                 "advanced": false,
                 "input_types": [
@@ -2057,7 +2057,7 @@
                 "placeholder": "",
                 "show": true,
                 "name": "input_value",
-                "value": "Notes: \nDemographic: I am a 22 year old male. I am approximately 5'11'' and 168 lbs. \nDietary Notes: I am a non vegetarian, my primary sources of protein are eggs, seafood, fish, or meat.\nActivity: I am very active I want workout for 5 days a week. I have access to all gym tools. I like to play basketball and badminton for 2 days in a week.",
+                "value": "Notes: \nDemographic: I am a 22 year old femal. I am approximately 4'11'' and 128 lbs. \nDietary Notes: I am a pure vegetarian, my primary sources of protein are tofu, yogurt etc.\nActivity: I am very active I want workout for 3 days a week. I have access to limited  gym tools.\n",
                 "display_name": "Text",
                 "advanced": false,
                 "input_types": [
@@ -2163,7 +2163,7 @@
                 "placeholder": "",
                 "show": true,
                 "name": "input_value",
-                "value": "Goals: \nGain: I want to gain strength and some definition in my abs and legs. I really want to get good shoulders.\nLose: I want to lose fat in my thigh region, torso region, and my upper arm region. ",
+                "value": "Goals: \nGain: I want to gain strength and some definition in my abs and legs. I really want to get good ass and butt.\nLose: I want to lose fat in my thigh region, torso region, and my upper arm region. ",
                 "display_name": "Text",
                 "advanced": false,
                 "input_types": [
@@ -2327,112 +2327,6 @@
           "type": "TextOutput",
           "id": "TextOutput-BOXES"
         },
-        "selected": true,
-        "measured": {
-          "width": 320,
-          "height": 230
-        },
-        "dragging": false
-      },
-      {
-        "id": "TextInput-9NjN5",
-        "type": "genericNode",
-        "position": {
-          "x": -310.3869027752105,
-          "y": 1211.2014087081009
-        },
-        "data": {
-          "node": {
-            "template": {
-              "_type": "Component",
-              "code": {
-                "type": "code",
-                "required": true,
-                "placeholder": "",
-                "list": false,
-                "show": true,
-                "multiline": true,
-                "value": "from langflow.base.io.text import TextComponent\nfrom langflow.io import MultilineInput, Output\nfrom langflow.schema.message import Message\n\n\nclass TextInputComponent(TextComponent):\n    display_name = \"Text Input\"\n    description = \"Get text inputs from the Playground.\"\n    icon = \"type\"\n    name = \"TextInput\"\n\n    inputs = [\n        MultilineInput(\n            name=\"input_value\",\n            display_name=\"Text\",\n            info=\"Text to be passed as input.\",\n        ),\n    ]\n    outputs = [\n        Output(display_name=\"Message\", name=\"text\", method=\"text_response\"),\n    ]\n\n    def text_response(self) -> Message:\n        return Message(\n            text=self.input_value,\n        )\n",
-                "fileTypes": [],
-                "file_path": "",
-                "password": false,
-                "name": "code",
-                "advanced": true,
-                "dynamic": true,
-                "info": "",
-                "load_from_db": false,
-                "title_case": false
-              },
-              "input_value": {
-                "tool_mode": false,
-                "trace_as_input": true,
-                "multiline": true,
-                "trace_as_metadata": true,
-                "load_from_db": false,
-                "list": false,
-                "list_add_label": "Add More",
-                "required": false,
-                "placeholder": "",
-                "show": true,
-                "name": "input_value",
-                "value": "Notes: \nDemographic: I am a 22 year old male. I am approximately 5'11'' and 168 lbs. \nDietary Notes: I am a non vegetarian, my primary sources of protein are eggs, seafood, fish, or meat.\nActivity: I am very active I want workout for 5 days a week. I have access to all gym tools. I like to play basketball and badminton for 2 days in a week.\n\nGoals: \nGain: I want to gain strength and some definition in my abs and legs. I really want to get good shoulders.\nLose: I want to lose fat in my thigh region, torso region, and my upper arm region. ",
-                "display_name": "Text",
-                "advanced": false,
-                "input_types": [
-                  "Message"
-                ],
-                "dynamic": false,
-                "info": "Text to be passed as input.",
-                "title_case": false,
-                "type": "str",
-                "_input_type": "MultilineInput"
-              }
-            },
-            "description": "Get text inputs from the Playground.",
-            "icon": "type",
-            "base_classes": [
-              "Message"
-            ],
-            "display_name": "Text Input",
-            "documentation": "",
-            "minimized": false,
-            "custom_fields": {},
-            "output_types": [],
-            "pinned": false,
-            "conditional_paths": [],
-            "frozen": false,
-            "outputs": [
-              {
-                "types": [
-                  "Message"
-                ],
-                "selected": "Message",
-                "name": "text",
-                "display_name": "Message",
-                "method": "text_response",
-                "value": "__UNDEFINED__",
-                "cache": true,
-                "allows_loop": false,
-                "tool_mode": true
-              }
-            ],
-            "field_order": [
-              "input_value"
-            ],
-            "beta": false,
-            "legacy": false,
-            "edited": false,
-            "metadata": {},
-            "tool_mode": false,
-            "category": "inputs",
-            "key": "TextInput",
-            "score": 0.0020353564437605998,
-            "lf_version": "1.2.0"
-          },
-          "showNode": true,
-          "type": "TextInput",
-          "id": "TextInput-9NjN5"
-        },
         "selected": false,
         "measured": {
           "width": 320,
@@ -2452,7 +2346,7 @@
             "template": {
               "_type": "Component",
               "api_key": {
-                "load_from_db": true,
+                "load_from_db": false,
                 "required": true,
                 "placeholder": "",
                 "show": true,
@@ -2521,7 +2415,7 @@
                 "placeholder": "",
                 "show": true,
                 "name": "max_output_tokens",
-                "value": 40000000,
+                "value": 4000000,
                 "display_name": "Max Output Tokens",
                 "advanced": false,
                 "dynamic": false,
@@ -2538,6 +2432,7 @@
                   "gemma-3-27b-it",
                   "gemini-pro-vision",
                   "gemini-exp-1206",
+                  "gemini-2.5-pro-exp-03-25",
                   "gemini-2.0-pro-exp-02-05",
                   "gemini-2.0-pro-exp",
                   "gemini-2.0-flash-thinking-exp-1219",
@@ -2632,7 +2527,7 @@
                 "placeholder": "",
                 "show": true,
                 "name": "system_message",
-                "value": "You are an advanced AI assistant specializing in creating scientifically-backed nutrition plans. Your task is to generate a comprehensive Diet Plan in JSON format, tailored to the user's specific details provided below. Ensure the output strictly matches the provided JSON schema and fits within the typical token limits of AI responses.\n\nSchema:\n\n{\n    \"hydration_guidelines\": {\n      \"daily_water_intake\": \"\",\n      \"timing_strategy\": \"\",\n      \"explanation\": \"\"\n    },\n      \"adjustment_guidelines\": {\n        \"weight_loss_plateau\": \"\",\n        \"strength_plateau\": \"\",\n        \"energy_issues\": \"\"\n     },\n    \"additional_recommendations_based_on_research\": [\n      {\n        \"title\": \"\",\n        \"description\": \"\",\n        \"scientific_basis\": \"\",\n        \"implementation_strategy\": \"\"\n      }\n    ]\n}",
+                "value": "You are an advanced AI assistant specializing in creating scientifically-backed nutrition plans. Your task is to generate a comprehensive Diet Plan in JSON format, tailored to the user's specific details provided below. Ensure the output strictly matches the provided JSON schema and fits within the typical token limits of AI responses.\n\nVery Important: Make sure to return the response without any ```json```.\n\nSchema:\n\n{\n    \"hydration_guidelines\": {\n      \"daily_water_intake\": \"\",\n      \"timing_strategy\": \"\",\n      \"explanation\": \"\"\n    },\n      \"adjustment_guidelines\": {\n        \"weight_loss_plateau\": \"\",\n        \"strength_plateau\": \"\",\n        \"energy_issues\": \"\"\n     },\n    \"additional_recommendations_based_on_research\": [\n      {\n        \"title\": \"\",\n        \"description\": \"\",\n        \"scientific_basis\": \"\",\n        \"implementation_strategy\": \"\"\n      }\n    ]\n}",
                 "display_name": "System Message",
                 "advanced": false,
                 "input_types": [
@@ -2914,6 +2809,158 @@
           "height": 230
         },
         "dragging": false
+      },
+      {
+        "id": "CombineText-PzQ7O",
+        "type": "genericNode",
+        "position": {
+          "x": -407.8637144874758,
+          "y": 1076.087140446818
+        },
+        "data": {
+          "node": {
+            "template": {
+              "_type": "Component",
+              "code": {
+                "type": "code",
+                "required": true,
+                "placeholder": "",
+                "list": false,
+                "show": true,
+                "multiline": true,
+                "value": "from langflow.custom import Component\nfrom langflow.io import MessageTextInput, Output\nfrom langflow.schema.message import Message\n\n\nclass CombineTextComponent(Component):\n    display_name = \"Combine Text\"\n    description = \"Concatenate two text sources into a single text chunk using a specified delimiter.\"\n    icon = \"merge\"\n    name = \"CombineText\"\n\n    inputs = [\n        MessageTextInput(\n            name=\"text1\",\n            display_name=\"First Text\",\n            info=\"The first text input to concatenate.\",\n        ),\n        MessageTextInput(\n            name=\"text2\",\n            display_name=\"Second Text\",\n            info=\"The second text input to concatenate.\",\n        ),\n        MessageTextInput(\n            name=\"delimiter\",\n            display_name=\"Delimiter\",\n            info=\"A string used to separate the two text inputs. Defaults to a whitespace.\",\n            value=\" \",\n        ),\n    ]\n\n    outputs = [\n        Output(display_name=\"Combined Text\", name=\"combined_text\", method=\"combine_texts\"),\n    ]\n\n    def combine_texts(self) -> Message:\n        combined = self.delimiter.join([self.text1, self.text2])\n        self.status = combined\n        return Message(text=combined)\n",
+                "fileTypes": [],
+                "file_path": "",
+                "password": false,
+                "name": "code",
+                "advanced": true,
+                "dynamic": true,
+                "info": "",
+                "load_from_db": false,
+                "title_case": false
+              },
+              "delimiter": {
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "load_from_db": false,
+                "list": false,
+                "list_add_label": "Add More",
+                "required": false,
+                "placeholder": "",
+                "show": true,
+                "name": "delimiter",
+                "value": " ",
+                "display_name": "Delimiter",
+                "advanced": false,
+                "input_types": [
+                  "Message"
+                ],
+                "dynamic": false,
+                "info": "A string used to separate the two text inputs. Defaults to a whitespace.",
+                "title_case": false,
+                "type": "str",
+                "_input_type": "MessageTextInput"
+              },
+              "text1": {
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "load_from_db": false,
+                "list": false,
+                "list_add_label": "Add More",
+                "required": false,
+                "placeholder": "",
+                "show": true,
+                "name": "text1",
+                "value": "",
+                "display_name": "First Text",
+                "advanced": false,
+                "input_types": [
+                  "Message"
+                ],
+                "dynamic": false,
+                "info": "The first text input to concatenate.",
+                "title_case": false,
+                "type": "str",
+                "_input_type": "MessageTextInput"
+              },
+              "text2": {
+                "tool_mode": false,
+                "trace_as_input": true,
+                "trace_as_metadata": true,
+                "load_from_db": false,
+                "list": false,
+                "list_add_label": "Add More",
+                "required": false,
+                "placeholder": "",
+                "show": true,
+                "name": "text2",
+                "value": "",
+                "display_name": "Second Text",
+                "advanced": false,
+                "input_types": [
+                  "Message"
+                ],
+                "dynamic": false,
+                "info": "The second text input to concatenate.",
+                "title_case": false,
+                "type": "str",
+                "_input_type": "MessageTextInput"
+              }
+            },
+            "description": "Concatenate two text sources into a single text chunk using a specified delimiter.",
+            "icon": "merge",
+            "base_classes": [
+              "Message"
+            ],
+            "display_name": "Combine Text",
+            "documentation": "",
+            "minimized": false,
+            "custom_fields": {},
+            "output_types": [],
+            "pinned": false,
+            "conditional_paths": [],
+            "frozen": false,
+            "outputs": [
+              {
+                "types": [
+                  "Message"
+                ],
+                "selected": "Message",
+                "name": "combined_text",
+                "display_name": "Combined Text",
+                "method": "combine_texts",
+                "value": "__UNDEFINED__",
+                "cache": true,
+                "allows_loop": false,
+                "tool_mode": true
+              }
+            ],
+            "field_order": [
+              "text1",
+              "text2",
+              "delimiter"
+            ],
+            "beta": false,
+            "legacy": false,
+            "edited": false,
+            "metadata": {},
+            "tool_mode": false,
+            "category": "processing",
+            "key": "CombineText",
+            "score": 0.100931297437969
+          },
+          "showNode": true,
+          "type": "CombineText",
+          "id": "CombineText-PzQ7O"
+        },
+        "selected": false,
+        "measured": {
+          "width": 320,
+          "height": 415
+        },
+        "dragging": false
       }
     ],
     "edges": [
@@ -3135,33 +3182,6 @@
         "className": ""
       },
       {
-        "source": "TextInput-9NjN5",
-        "sourceHandle": "{œdataTypeœ:œTextInputœ,œidœ:œTextInput-9NjN5œ,œnameœ:œtextœ,œoutput_typesœ:[œMessageœ]}",
-        "target": "GoogleGenerativeAIModel-RmN9Z",
-        "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œGoogleGenerativeAIModel-RmN9Zœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
-        "data": {
-          "targetHandle": {
-            "fieldName": "input_value",
-            "id": "GoogleGenerativeAIModel-RmN9Z",
-            "inputTypes": [
-              "Message"
-            ],
-            "type": "str"
-          },
-          "sourceHandle": {
-            "dataType": "TextInput",
-            "id": "TextInput-9NjN5",
-            "name": "text",
-            "output_types": [
-              "Message"
-            ]
-          }
-        },
-        "id": "xy-edge__TextInput-9NjN5{œdataTypeœ:œTextInputœ,œidœ:œTextInput-9NjN5œ,œnameœ:œtextœ,œoutput_typesœ:[œMessageœ]}-GoogleGenerativeAIModel-RmN9Z{œfieldNameœ:œinput_valueœ,œidœ:œGoogleGenerativeAIModel-RmN9Zœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
-        "animated": false,
-        "className": ""
-      },
-      {
         "source": "GoogleGenerativeAIModel-hP3bM",
         "sourceHandle": "{œdataTypeœ:œGoogleGenerativeAIModelœ,œidœ:œGoogleGenerativeAIModel-hP3bMœ,œnameœ:œtext_outputœ,œoutput_typesœ:[œMessageœ]}",
         "target": "TextOutput-FxfEB",
@@ -3214,16 +3234,94 @@
         "id": "xy-edge__Prompt-wO4NQ{œdataTypeœ:œPromptœ,œidœ:œPrompt-wO4NQœ,œnameœ:œpromptœ,œoutput_typesœ:[œMessageœ]}-GoogleGenerativeAIModel-hP3bM{œfieldNameœ:œinput_valueœ,œidœ:œGoogleGenerativeAIModel-hP3bMœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
         "animated": false,
         "className": ""
+      },
+      {
+        "source": "TextInput-pZFfT",
+        "sourceHandle": "{œdataTypeœ:œTextInputœ,œidœ:œTextInput-pZFfTœ,œnameœ:œtextœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "CombineText-PzQ7O",
+        "targetHandle": "{œfieldNameœ:œtext1œ,œidœ:œCombineText-PzQ7Oœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "data": {
+          "targetHandle": {
+            "fieldName": "text1",
+            "id": "CombineText-PzQ7O",
+            "inputTypes": [
+              "Message"
+            ],
+            "type": "str"
+          },
+          "sourceHandle": {
+            "dataType": "TextInput",
+            "id": "TextInput-pZFfT",
+            "name": "text",
+            "output_types": [
+              "Message"
+            ]
+          }
+        },
+        "id": "xy-edge__TextInput-pZFfT{œdataTypeœ:œTextInputœ,œidœ:œTextInput-pZFfTœ,œnameœ:œtextœ,œoutput_typesœ:[œMessageœ]}-CombineText-PzQ7O{œfieldNameœ:œtext1œ,œidœ:œCombineText-PzQ7Oœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "className": ""
+      },
+      {
+        "source": "TextInput-Jan01",
+        "sourceHandle": "{œdataTypeœ:œTextInputœ,œidœ:œTextInput-Jan01œ,œnameœ:œtextœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "CombineText-PzQ7O",
+        "targetHandle": "{œfieldNameœ:œtext2œ,œidœ:œCombineText-PzQ7Oœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "data": {
+          "targetHandle": {
+            "fieldName": "text2",
+            "id": "CombineText-PzQ7O",
+            "inputTypes": [
+              "Message"
+            ],
+            "type": "str"
+          },
+          "sourceHandle": {
+            "dataType": "TextInput",
+            "id": "TextInput-Jan01",
+            "name": "text",
+            "output_types": [
+              "Message"
+            ]
+          }
+        },
+        "id": "xy-edge__TextInput-Jan01{œdataTypeœ:œTextInputœ,œidœ:œTextInput-Jan01œ,œnameœ:œtextœ,œoutput_typesœ:[œMessageœ]}-CombineText-PzQ7O{œfieldNameœ:œtext2œ,œidœ:œCombineText-PzQ7Oœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "className": ""
+      },
+      {
+        "source": "CombineText-PzQ7O",
+        "sourceHandle": "{œdataTypeœ:œCombineTextœ,œidœ:œCombineText-PzQ7Oœ,œnameœ:œcombined_textœ,œoutput_typesœ:[œMessageœ]}",
+        "target": "GoogleGenerativeAIModel-RmN9Z",
+        "targetHandle": "{œfieldNameœ:œinput_valueœ,œidœ:œGoogleGenerativeAIModel-RmN9Zœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "data": {
+          "targetHandle": {
+            "fieldName": "input_value",
+            "id": "GoogleGenerativeAIModel-RmN9Z",
+            "inputTypes": [
+              "Message"
+            ],
+            "type": "str"
+          },
+          "sourceHandle": {
+            "dataType": "CombineText",
+            "id": "CombineText-PzQ7O",
+            "name": "combined_text",
+            "output_types": [
+              "Message"
+            ]
+          }
+        },
+        "id": "xy-edge__CombineText-PzQ7O{œdataTypeœ:œCombineTextœ,œidœ:œCombineText-PzQ7Oœ,œnameœ:œcombined_textœ,œoutput_typesœ:[œMessageœ]}-GoogleGenerativeAIModel-RmN9Z{œfieldNameœ:œinput_valueœ,œidœ:œGoogleGenerativeAIModel-RmN9Zœ,œinputTypesœ:[œMessageœ],œtypeœ:œstrœ}",
+        "className": ""
       }
     ],
     "viewport": {
-      "x": -252.99192844797028,
-      "y": -883.0954223309011,
-      "zoom": 0.7923779281475323
+      "x": 0,
+      "y": 0,
+      "zoom": 1
     }
   },
   "description": "Where Language Meets Logic.",
-  "name": "Test2",
+  "name": "Nutrition",
   "last_tested_version": "1.2.0",
   "endpoint_name": null,
   "is_component": false
