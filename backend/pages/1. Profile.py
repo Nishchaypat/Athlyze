@@ -2,21 +2,34 @@ import streamlit as st
 import sys
 import os
 import time
+import uuid
+import concurrent.futures
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../")))
 
-from local_flows.nutrition_flow_local import run_the_flow 
+from local_flows.nutrition_flow_local import run_the_flow as nutrition_flow
+from local_flows.training_flow_local import run_the_flow as training_flow
 
 st.set_page_config(page_title="Athlyze | Profile", page_icon="/Users/npatel237/Athlyze/backend/public/favicon.svg", layout="wide")
+
+if "session_id" not in st.session_state:
+   st.session_state.session_id = str(uuid.uuid4())
+
+session = st.session_state.session_id
+
+print("Profile Session ID::", session)
+
 st.title("Your Profile")
 
 st.subheader("Tell us about yourself:")
 name = st.text_input("Name")
 age = st.slider("Age", 16, 80, 20)
+gender = st.selectbox("Gender", ["Male", "Female", "Other"])
 experience = st.selectbox("Experience Level", ["Beginner", "Intermediate", "Advanced"])
 
+st.subheader("Make the description below as descriptive as possible:")
 
-notes = st.text_area("Notes", placeholder="""Demographic: I am a 22 year old female. I am approximately 4'11'' and 128 lbs.  
+notes = st.text_area("Notes", placeholder=""" 
 Dietary Notes: I am a pure vegetarian, my primary sources of protein are tofu, yogurt etc.
 Activity: I am very active I want workout for 3 days a week. I have access to limited gym tools.
 Possible Limitations: I cannot each soy, I have leg injury so I cannot do heavy leg workouts.""")
@@ -30,9 +43,15 @@ if st.button("Generate My Plan"):
     st.success("Your personalized plan is being created...")
 
     with st.spinner("Analyzing your data..."):
-        status = run_the_flow(name, notes, goals)
+        with concurrent.futures.ThreadPoolExecutor() as executor:
+            future_nutrition = executor.submit(nutrition_flow, session, notes, goals)
+            future_training = executor.submit(training_flow, session, notes, goals)
 
-    if status == "Success":
+            status_nutrition = future_nutrition.result()
+            status_training = future_training.result()
+
+
+    if status_nutrition == "Success":
         st.subheader("Your AI-Powered Plan has been created")
         st.write("**Physical Training:** Check the Calendar")
         st.write("**Nutrition Plan:** Check the Nutrition")

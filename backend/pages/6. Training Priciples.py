@@ -4,6 +4,9 @@ import os
 
 st.set_page_config(page_title="Athlyze | Training Principles", page_icon="/Users/npatel237/Athlyze/backend/public/favicon.svg", layout="wide")
 
+session = st.session_state.session_id
+print("Muscle::",session)
+
 st.markdown("""
 <style>
     .main {
@@ -35,12 +38,42 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 def load_training_principles():
-    """Load the training principles from a JSON file or return default data."""
-
-    file_path = "/Users/npatel237/Athlyze/backend/database/training_principle.json"
-    if os.path.exists(file_path):
+    """Load the training principles from a JSON file or return a default structured JSON."""
+    file_path = f"/Users/npatel237/Athlyze/backend/database/{session}_training_principles.json"
+    
+    try:
         with open(file_path, 'r') as file:
-            return json.load(file)
+            return json.load(file)  # Try loading JSON data from file
+        
+    except (FileNotFoundError, json.JSONDecodeError):
+
+        return {
+            "training_principles": {
+                "progressive_overload": "Detailed explanation of progressive overload methods based on scientific research",
+                "recovery_guidelines": "Evidence-based recovery protocols with optimal time frames",
+                "mobility_and_flexibility": "Research-supported mobility and flexibility practices and their integration with strength training",
+                "warm_up_and_cool_down": "Scientifically optimal warm-up and cool-down protocols with physiological justification",
+                "injury_prevention": "Research-backed strategies to minimize injury risk while maximizing training benefits"
+            },
+            "adjustment_guidelines": {
+                "plateau_breaking_strategies": "Scientific approaches to overcome training plateaus with physiological explanations",
+                "form_correction_tips": "Biomechanically sound technique guidelines with common error corrections",
+                "training_periodization": "Evidence-based periodization models with practical implementation details"
+            },
+            "performance_tracking": {
+                "tracking_methods": "Validated methods for monitoring training progress and adaptations",
+                "weekly_evaluation_metrics": "Key performance indicators backed by research on training adaptations",
+                "strength_progression_goals": "Realistic, research-supported strength development targets by training level"
+            },
+            "additional_recommendations_based_on_research": [
+                {
+                "title": "Title of research-based recommendation",
+                "description": "Detailed explanation of the practical recommendation",
+                "scientific_basis": "Summary of supporting research with key findings",
+                "implementation_strategy": "Step-by-step implementation protocol based on research"
+                }
+            ]
+        }
 
 def display_training_principles(principles):
 

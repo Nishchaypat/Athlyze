@@ -7,9 +7,6 @@ load_dotenv()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 ASTRA_DB_APPLICATION_TOKEN = os.getenv("ASTRA_DB_APPLICATION_TOKEN")
 
-goals = "Goals:  Gain: I want to gain strength and some definition in my abs and legs. I really want to get good ass and butt. Lose: I want to lose fat in my thigh region, torso region, and my upper arm region. "
-notes = "Notes:  Demographic: I am a 22 year old female. I am approximately 4'11'' and 128 lbs.  Dietary Notes: I am a pure vegetarian, my primary sources of protein are tofu, yogurt etc. Activity: I am very active I want workout for 3 days a week. I have access to limited gym tools."
-
 def save_json_data(data, filename, path="/Users/npatel237/Athlyze/backend/database"):
   """
   Save JSON data with robust error handling and logging
@@ -127,7 +124,6 @@ def run_the_flow(name, notes, goals):
     "text2": ""
     }
   }
-
   try:
     result = run_flow_from_json(flow="/Users/npatel237/Athlyze/flow/Nutrition.json",
                                 input_value="message",

@@ -2603,7 +2603,7 @@
                 "placeholder": "",
                 "show": true,
                 "name": "model_name",
-                "value": "learnlm-1.5-pro-experimental",
+                "value": "gemini-2.0-flash-thinking-exp-01-21",
                 "display_name": "Model",
                 "advanced": false,
                 "dynamic": false,

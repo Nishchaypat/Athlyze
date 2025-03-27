@@ -7,6 +7,9 @@ import calendar
 
 st.set_page_config(page_title="Athlyze | Nutrition", page_icon="/Users/npatel237/Athlyze/backend/public/favicon.svg", layout="wide")
 
+session = st.session_state.session_id
+print("Nutrition::",session)
+
 st.markdown("""
 <style>
     .main {
@@ -59,7 +62,8 @@ st.markdown("""
 def load_nutrition_plan():
     """Load the nutrition plan from the JSON file."""
     try:
-        file_path = "/Users/npatel237/Athlyze/backend/database/Nick_nutrition_plan.json"
+        file_path = f"/Users/npatel237/Athlyze/backend/database/{session}_nutrition_plan.json"
+        print(file_path)
         if os.path.exists(file_path):
             with open(file_path, 'r') as file:
                 return json.load(file)
@@ -97,14 +101,22 @@ def load_nutrition_plan():
 
 def display_meal(meal_data, meal_name):
     """Display a single meal's details."""
+    macros = meal_data.get('macros', {})  # Ensure macros is a dictionary
+
+    if not isinstance(macros, dict):  # Convert if it's a string (possible parsing issue)
+        try:
+            macros = json.loads(macros)
+        except (json.JSONDecodeError, TypeError):
+            macros = {"protein": "N/A", "carbs": "N/A", "fats": "N/A"}  # Default values
+
     with st.container():
         st.markdown(f"""
         <div class="meal-card">
             <h4>{meal_data.get('name', meal_name)}</h4>
             <p><strong>Calories:</strong> {meal_data.get('calories', 'N/A')} | 
-            <strong>Protein:</strong> {meal_data['macros'].get('protein', 'N/A')}g | 
-            <strong>Carbs:</strong> {meal_data['macros'].get('carbs', 'N/A')}g | 
-            <strong>Fats:</strong> {meal_data['macros'].get('fats', 'N/A')}g</p>
+            <strong>Protein:</strong> {macros.get('protein', 'N/A')}g | 
+            <strong>Carbs:</strong> {macros.get('carbs', 'N/A')}g | 
+            <strong>Fats:</strong> {macros.get('fats', 'N/A')}g</p>
         </div>
         """, unsafe_allow_html=True)
         

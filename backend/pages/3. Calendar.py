@@ -7,6 +7,9 @@ import calendar
 
 st.set_page_config(page_title="Athlyze | Training", page_icon="/Users/npatel237/Athlyze/backend/public/favicon.svg", layout="wide")
 
+session = st.session_state.get('session_id')
+print("Muscle::",session)
+
 st.markdown("""
 <style>
     .main {
@@ -61,7 +64,7 @@ st.markdown("""
 def load_training_plan():
     """Load the training plan from the JSON file."""
     try:
-        file_path = "/Users/npatel237/Athlyze/backend/database/training_schedule.json"
+        file_path = f"/Users/npatel237/Athlyze/backend/database/{session}_training_plan.json"
         if os.path.exists(file_path):
             with open(file_path, 'r') as file:
                 return json.load(file)

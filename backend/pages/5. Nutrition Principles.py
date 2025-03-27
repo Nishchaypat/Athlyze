@@ -4,6 +4,9 @@ import os
 
 st.set_page_config(page_title="Athlyze | Nutrition Principles", page_icon="/Users/npatel237/Athlyze/backend/public/favicon.svg", layout="wide")
 
+session = st.session_state.session_id
+print("Nutrition::",session)
+
 st.markdown("""
 <style>
     .main {
@@ -36,7 +39,7 @@ st.markdown("""
 
 def load_training_principles():
     """Load the training principles from a JSON file or return default data."""
-    file_path = "/Users/npatel237/Athlyze/backend/database/Nick_nutrition_principles.json"
+    file_path = f"/Users/npatel237/Athlyze/backend/database/{session}_nutrition_principles.json"
     if os.path.exists(file_path):
         with open(file_path, 'r') as file:
             return json.load(file)
