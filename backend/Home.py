@@ -1,13 +1,7 @@
 import streamlit as st
 import os
 
-# Page Configuration
-st.set_page_config(
-    page_title="Athlyze", 
-    page_icon="🏋️", 
-    layout="wide", 
-    initial_sidebar_state="expanded"
-)
+st.set_page_config(page_title="Athlyze", page_icon="/Users/npatel237/Athlyze/backend/public/favicon.svg", layout="wide")
 
 # Custom CSS for improved styling
 def local_css(file_name):
