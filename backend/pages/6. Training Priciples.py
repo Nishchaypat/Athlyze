@@ -1,11 +1,24 @@
 import streamlit as st
 import json
 import os
+import extra_streamlit_components as stx
 
 st.set_page_config(page_title="Athlyze | Training Principles", page_icon="/Users/npatel237/Athlyze/backend/public/favicon.svg", layout="wide")
 
-session = st.session_state.session_id
-print("Muscle::",session)
+def get_manager():
+    return stx.CookieManager()
+
+cookie_manager = get_manager()
+
+# Retrieve session ID from cookies
+session_id = cookie_manager.get("session_id")
+
+if session_id is None:
+    session_id = "No Session Found"
+
+# Store it in session_state for intra-page access
+st.session_state["session_id"] = session_id
+print("Muscle::",session_id)
 
 st.markdown("""
 <style>
@@ -39,7 +52,7 @@ st.markdown("""
 
 def load_training_principles():
     """Load the training principles from a JSON file or return a default structured JSON."""
-    file_path = f"/Users/npatel237/Athlyze/backend/database/{session}_training_principles.json"
+    file_path = f"/Users/npatel237/Athlyze/backend/database/{session_id}_training_principles.json"
     
     try:
         with open(file_path, 'r') as file:

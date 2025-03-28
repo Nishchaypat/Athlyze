@@ -452,3 +452,4 @@ youtube-transcript-api==0.6.3
 zep-python==2.0.2
 zstandard==0.23.0
 httpx==0.28.0
+extra-streamlit-components==0.1.71

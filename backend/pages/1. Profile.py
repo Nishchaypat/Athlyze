@@ -4,6 +4,7 @@ import os
 import time
 import uuid
 import concurrent.futures
+import extra_streamlit_components as stx
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../../")))
 
@@ -12,12 +13,23 @@ from local_flows.training_flow_local import run_the_flow as training_flow
 
 st.set_page_config(page_title="Athlyze | Profile", page_icon="/Users/npatel237/Athlyze/backend/public/favicon.svg", layout="wide")
 
-if "session_id" not in st.session_state:
-   st.session_state.session_id = str(uuid.uuid4())
+def get_manager():
+    return stx.CookieManager()
 
-session = st.session_state.session_id
+cookie_manager = get_manager()
 
-print("Profile Session ID::", session)
+# Check if session_id exists in cookies
+session_id = cookie_manager.get("session_id")
+
+if session_id is None:
+    session_id = str(uuid.uuid4())
+    cookie_manager.set("session_id", session_id)
+
+# Store session_id in session state for intra-page access
+st.session_state["session_id"] = session_id
+
+
+print("Profile Session ID::", session_id)
 
 st.title("Your Profile")
 
@@ -44,8 +56,8 @@ if st.button("Generate My Plan"):
 
     with st.spinner("Analyzing your data..."):
         with concurrent.futures.ThreadPoolExecutor() as executor:
-            future_nutrition = executor.submit(nutrition_flow, session, notes, goals)
-            future_training = executor.submit(training_flow, session, notes, goals)
+            future_nutrition = executor.submit(nutrition_flow, session_id, notes, goals)
+            future_training = executor.submit(training_flow, session_id, notes, goals)
 
             status_nutrition = future_nutrition.result()
             status_training = future_training.result()

@@ -4,11 +4,26 @@ import pandas as pd
 import os
 from datetime import datetime, timedelta
 import calendar
+import extra_streamlit_components as stx
+
 
 st.set_page_config(page_title="Athlyze | Nutrition", page_icon="/Users/npatel237/Athlyze/backend/public/favicon.svg", layout="wide")
 
-session = st.session_state.session_id
-print("Nutrition::",session)
+def get_manager():
+    return stx.CookieManager()
+
+cookie_manager = get_manager()
+
+# Retrieve session ID from cookies
+session_id = cookie_manager.get("session_id")
+
+if session_id is None:
+    session_id = "No Session Found"
+
+# Store it in session_state for intra-page access
+st.session_state["session_id"] = session_id
+
+print("Nutrition::",session_id)
 
 st.markdown("""
 <style>
@@ -62,7 +77,7 @@ st.markdown("""
 def load_nutrition_plan():
     """Load the nutrition plan from the JSON file."""
     try:
-        file_path = f"/Users/npatel237/Athlyze/backend/database/{session}_nutrition_plan.json"
+        file_path = f"/Users/npatel237/Athlyze/backend/database/{session_id}_nutrition_plan.json"
         print(file_path)
         if os.path.exists(file_path):
             with open(file_path, 'r') as file:
