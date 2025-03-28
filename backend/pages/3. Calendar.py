@@ -16,9 +16,6 @@ cookie_manager = get_manager()
 # Retrieve session ID from cookies
 session_id = cookie_manager.get("session_id")
 
-if session_id is None:
-    session_id = "No Session Found"
-
 # Store it in session_state for intra-page access
 st.session_state["session_id"] = session_id
 
@@ -74,7 +71,6 @@ st.markdown("""
     }
 </style>
 """, unsafe_allow_html=True)
-
 def load_training_plan():
     """Load the training plan from the JSON file."""
     try:
