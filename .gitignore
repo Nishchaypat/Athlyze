@@ -193,6 +193,6 @@ formatted_embeddings_input_resistant.json
 
 embedded_results_nutrition.json
 
-database/
+database_embeddings/
 
 athlye_app/package-lock.json

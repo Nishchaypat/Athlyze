@@ -451,3 +451,4 @@ yfinance==0.2.51
 youtube-transcript-api==0.6.3
 zep-python==2.0.2
 zstandard==0.23.0
+httpx==0.28.0

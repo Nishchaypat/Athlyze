@@ -1,0 +1,545 @@
+{
+"intro": "This personalized diet plan is designed to help you achieve your goals of gaining strength and definition, particularly in your abs, legs, and glutes, while also reducing fat in your thighs, torso, and upper arms.  As a vegetarian, this plan focuses on plant-based protein sources to support muscle growth and recovery. It emphasizes a balanced approach to nutrition, avoiding restrictive practices to promote a healthy relationship with food and body image, in line with research highlighting the risks of disordered eating in physique-focused individuals. This plan is based on scientific evidence and tailored to your activity level and dietary preferences.",
+"diet_schedule": {
+    "caloric_needs": {
+    "daily_calories": "Approximately 1650 calories",
+    "calculation_method": "Mifflin-St Jeor equation for Basal Metabolic Rate (BMR) and multiplied by an activity factor of 1.5 (for active individuals). A slight caloric deficit of approximately 250 calories is incorporated to support fat loss while aiming for body recomposition.",
+    "adjustment_factors": "Caloric intake may need to be adjusted based on your progress and how your body responds. Monitor your weight, body measurements, and energy levels. If weight loss plateaus or you experience excessive hunger or fatigue, adjustments may be necessary. It is recommended to adjust calories in increments of 100-200 calories."
+    },
+    "macronutrient_distribution": {
+    "protein": "105g (approximately 1.8g per kg of body weight)",
+    "carbohydrates": "185g (approximately 45% of total calories)",
+    "fats": "55g (approximately 30% of total calories)",
+    "explanation": "This macronutrient distribution is designed to support muscle protein synthesis for strength and definition gains while providing sufficient carbohydrates for energy during workouts and daily activities.  A moderate fat intake is essential for hormone production and overall health.  Prioritizing protein is crucial for muscle growth, especially in a vegetarian diet, and helps with satiety to manage calorie intake effectively. Research suggests adequate protein intake is vital for muscle building and repair, while balanced carbohydrates and fats support overall metabolic function and energy levels."
+    },
+    "daily_meal_plan": {
+    "Monday": {
+        "breakfast": {
+        "name": "Tofu Scramble with Whole Wheat Toast",
+        "calories": "350",
+        "macros": {
+            "protein": "25g",
+            "carbs": "35g",
+            "fats": "15g"
+        },
+        "ingredients": [
+            "150g Tofu, crumbled",
+            "1/2 cup Mixed vegetables (peppers, onions, spinach)",
+            "1 tbsp Olive oil",
+            "Spices (turmeric, cumin, black salt)",
+            "2 slices Whole wheat toast"
+        ],
+        "alternatives": [
+            "Vegetarian sausage with whole wheat toast and avocado",
+            "Greek yogurt with berries and nuts"
+        ]
+        },
+        "lunch": {
+        "name": "Lentil Soup with Salad",
+        "calories": "400",
+        "macros": {
+            "protein": "20g",
+            "carbs": "50g",
+            "fats": "10g"
+        },
+        "ingredients": [
+            "1.5 cups Lentil soup (homemade or low sodium canned)",
+            "Large mixed green salad",
+            "1 tbsp Olive oil and vinegar dressing"
+        ],
+        "alternatives": [
+            "Chickpea and vegetable curry with brown rice",
+            "Quinoa salad with black beans, corn, and salsa"
+        ]
+        },
+        "pre_workout": {
+        "name": "Banana with Peanut Butter",
+        "calories": "200",
+        "macros": {
+            "protein": "5g",
+            "carbs": "30g",
+            "fats": "8g"
+        },
+        "ingredients": [
+            "1 medium Banana",
+            "1 tbsp Peanut butter (natural)"
+        ],
+        "alternatives": [
+            "Apple slices with almond butter",
+            "Small bowl of oatmeal with fruit"
+        ]
+        },
+        "dinner": {
+        "name": "Vegetable and Tofu Stir-fry with Brown Rice",
+        "calories": "500",
+        "macros": {
+            "protein": "30g",
+            "carbs": "60g",
+            "fats": "20g"
+        },
+        "ingredients": [
+            "150g Firm tofu, cubed",
+            "2 cups Mixed vegetables (broccoli, carrots, bell peppers)",
+            "1 tbsp Soy sauce (low sodium)",
+            "1 tbsp Sesame oil",
+            "1 cup Cooked brown rice"
+        ],
+        "alternatives": [
+            "Vegetarian chili with whole wheat bread",
+            "Baked sweet potato with black beans and salsa"
+        ]
+        }
+    },
+    "Tuesday": {
+        "breakfast": {
+        "name": "Greek Yogurt with Granola and Berries",
+        "calories": "300",
+        "macros": {
+            "protein": "20g",
+            "carbs": "30g",
+            "fats": "10g"
+        },
+        "ingredients": [
+            "1 cup Greek yogurt (non-fat or low-fat)",
+            "1/4 cup Granola (low sugar)",
+            "1/2 cup Mixed berries"
+        ],
+        "alternatives": [
+            "Overnight oats with protein powder and fruit",
+            "Chia seed pudding with almond milk and berries"
+        ]
+        },
+        "lunch": {
+        "name": "Paneer Tikka Salad",
+        "calories": "450",
+        "macros": {
+            "protein": "25g",
+            "carbs": "40g",
+            "fats": "25g"
+        },
+        "ingredients": [
+            "100g Paneer, marinated in yogurt and spices, grilled or pan-fried",
+            "Large mixed green salad",
+            "Cucumber, tomatoes, onions",
+            "Lemon dressing"
+        ],
+        "alternatives": [
+            "Vegetable wraps with hummus and whole wheat tortillas",
+            "Spinach and ricotta stuffed shells (portion controlled)"
+        ]
+        },
+        "pre_workout": {
+        "name": "Rice Cakes with Avocado",
+        "calories": "150",
+        "macros": {
+            "protein": "2g",
+            "carbs": "20g",
+            "fats": "7g"
+        },
+        "ingredients": [
+            "2 Rice cakes (whole grain)",
+            "1/4 Avocado, mashed"
+        ],
+        "alternatives": [
+            "Small orange and a handful of almonds",
+            "Protein shake with fruit"
+        ]
+        },
+        "dinner": {
+        "name": "Vegetarian Shepherd's Pie with Sweet Potato Topping",
+        "calories": "550",
+        "macros": {
+            "protein": "28g",
+            "carbs": "70g",
+            "fats": "20g"
+        },
+        "ingredients": [
+            "Vegetarian mince (lentil or soy-based)",
+            "Mixed vegetables (peas, carrots, corn)",
+            "Sweet potato mash topping",
+            "Herbs and spices"
+        ],
+        "alternatives": [
+            "Vegetable lasagna with whole wheat pasta and ricotta cheese",
+            "Homemade veggie burgers on whole wheat buns with salad"
+        ]
+        }
+    },
+    "Wednesday": {
+        "breakfast": {
+        "name": "Protein Smoothie",
+        "calories": "320",
+        "macros": {
+            "protein": "30g",
+            "carbs": "30g",
+            "fats": "8g"
+        },
+        "ingredients": [
+            "1 scoop Vegetarian protein powder (whey or plant-based)",
+            "1/2 cup Frozen berries",
+            "1/2 Banana",
+            "1 cup Almond milk (unsweetened)",
+            "1 tbsp Flax seeds"
+        ],
+        "alternatives": [
+            "Omelette with vegetables and whole wheat toast",
+            "High-protein vegetarian breakfast burrito"
+        ]
+        },
+        "lunch": {
+        "name": "Quinoa and Black Bean Bowl",
+        "calories": "420",
+        "macros": {
+            "protein": "18g",
+            "carbs": "60g",
+            "fats": "12g"
+        },
+        "ingredients": [
+            "1 cup Cooked quinoa",
+            "1/2 cup Black beans",
+            "1/2 cup Corn",
+            "Salsa",
+            "1/4 Avocado",
+            "Lime juice"
+        ],
+        "alternatives": [
+            "Buddha bowl with roasted vegetables and chickpeas",
+            "Whole wheat pita with falafel and salad"
+        ]
+        },
+        "pre_workout": {
+        "name": "Apple slices with Almond Butter",
+        "calories": "180",
+        "macros": {
+            "protein": "4g",
+            "carbs": "25g",
+            "fats": "9g"
+        },
+        "ingredients": [
+            "1 medium Apple, sliced",
+            "1 tbsp Almond butter (natural)"
+        ],
+        "alternatives": [
+            "Small pear with walnuts",
+            "Energy bar (check for protein and sugar content)"
+        ]
+        },
+        "dinner": {
+        "name": "Palak Paneer with Roti",
+        "calories": "530",
+        "macros": {
+            "protein": "25g",
+            "carbs": "55g",
+            "fats": "25g"
+        },
+        "ingredients": [
+            "1 serving Palak Paneer (spinach and paneer curry)",
+            "2 Whole wheat roti"
+        ],
+        "alternatives": [
+            "Vegetable biryani with raita",
+            "Dal Makhani with brown rice (portion controlled)"
+        ]
+        }
+    },
+    "Thursday": {
+        "breakfast": {
+        "name": "Whole Wheat Pancakes with Berries and Yogurt",
+        "calories": "380",
+        "macros": {
+            "protein": "15g",
+            "carbs": "50g",
+            "fats": "15g"
+        },
+        "ingredients": [
+            "2 Whole wheat pancakes",
+            "1/2 cup Mixed berries",
+            "1/2 cup Greek yogurt (non-fat or low-fat)",
+            "1 tbsp Maple syrup (optional, in moderation)"
+        ],
+        "alternatives": [
+            "Scrambled tofu with whole wheat toast and avocado",
+            "Vegetarian breakfast quesadilla with beans and cheese"
+        ]
+        },
+        "lunch": {
+        "name": "Chickpea Salad Sandwich on Whole Wheat Bread",
+        "calories": "400",
+        "macros": {
+            "protein": "15g",
+            "carbs": "50g",
+            "fats": "18g"
+        },
+        "ingredients": [
+            "Chickpea salad (mashed chickpeas, celery, onion, vegan mayo or yogurt)",
+            "2 slices Whole wheat bread",
+            "Lettuce, tomato"
+        ],
+        "alternatives": [
+            "Vegetarian chili with cornbread (portion controlled)",
+            "Lentil and vegetable soup with whole wheat crackers"
+        ]
+        },
+        "pre_workout": {
+        "name": "Grapes and Cheese Cubes (Cottage Cheese or Paneer)",
+        "calories": "170",
+        "macros": {
+            "protein": "10g",
+            "carbs": "15g",
+            "fats": "8g"
+        },
+        "ingredients": [
+            "1 cup Grapes",
+            "30g Cottage cheese or Paneer cubes"
+        ],
+        "alternatives": [
+            "Small handful of trail mix (nuts, seeds, dried fruit)",
+            "Hard-boiled egg (if you consume eggs)"
+        ]
+        },
+        "dinner": {
+        "name": "Vegetable Curry with Brown Rice",
+        "calories": "500",
+        "macros": {
+            "protein": "20g",
+            "carbs": "70g",
+            "fats": "15g"
+        },
+        "ingredients": [
+            "2 cups Mixed vegetable curry (cauliflower, potatoes, peas, carrots)",
+            "1 cup Cooked brown rice"
+        ],
+        "alternatives": [
+            "Vegetable and bean enchiladas with whole wheat tortillas",
+            "Homemade pizza with whole wheat crust and vegetables"
+        ]
+        }
+    },
+    "Friday": {
+        "breakfast": {
+        "name": "Oatmeal with Nuts and Seeds",
+        "calories": "350",
+        "macros": {
+            "protein": "12g",
+            "carbs": "45g",
+            "fats": "15g"
+        },
+        "ingredients": [
+            "1/2 cup Dry oats",
+            "1 cup Water or almond milk",
+            "1/4 cup Mixed nuts and seeds",
+            "1/2 cup Berries or sliced banana"
+        ],
+        "alternatives": [
+            "Vegetarian breakfast burrito with tofu scramble and beans",
+            "Whole wheat toast with avocado and tomato"
+        ]
+        },
+        "lunch": {
+        "name": "Tofu and Vegetable Wrap",
+        "calories": "420",
+        "macros": {
+            "protein": "20g",
+            "carbs": "45g",
+            "fats": "20g"
+        },
+        "ingredients": [
+            "100g Tofu, marinated and grilled or pan-fried",
+            "Whole wheat tortilla",
+            "Mixed vegetables (lettuce, spinach, peppers, carrots)",
+            "Hummus or vegan mayo"
+        ],
+        "alternatives": [
+            "Quinoa salad with roasted vegetables and chickpeas",
+            "Vegetable and lentil soup with whole wheat bread"
+        ]
+        },
+        "pre_workout": {
+        "name": "Sweet Potato Fries (Baked, Small Portion)",
+        "calories": "200",
+        "macros": {
+            "protein": "3g",
+            "carbs": "35g",
+            "fats": "5g"
+        },
+        "ingredients": [
+            "1 small Sweet potato, cut into fries and baked",
+            "Spices (paprika, garlic powder)"
+        ],
+        "alternatives": [
+            "Small portion of whole wheat pasta with tomato sauce",
+            "Fruit smoothie with minimal added sugar"
+        ]
+        },
+        "dinner": {
+        "name": "Vegetarian Pasta Primavera",
+        "calories": "530",
+        "macros": {
+            "protein": "20g",
+            "carbs": "75g",
+            "fats": "15g"
+        },
+        "ingredients": [
+            "1.5 cups Whole wheat pasta",
+            "2 cups Mixed vegetables (broccoli, peas, asparagus, zucchini)",
+            "Olive oil and garlic sauce",
+            "Parmesan cheese (optional, vegetarian)"
+        ],
+        "alternatives": [
+            "Vegetable and bean stew with whole wheat bread",
+            "Homemade vegetarian chili with toppings like avocado and yogurt"
+        ]
+        }
+    },
+    "Saturday": {
+        "breakfast": {
+        "name": "Breakfast Burrito Bowl",
+        "calories": "400",
+        "macros": {
+            "protein": "20g",
+            "carbs": "50g",
+            "fats": "15g"
+        },
+        "ingredients": [
+            "1/2 cup Cooked brown rice or quinoa",
+            "1/2 cup Black beans",
+            "Scrambled tofu or paneer",
+            "Salsa",
+            "Avocado slices"
+        ],
+        "alternatives": [
+            "Vegetarian frittata with vegetables and cheese",
+            "Pancakes made with protein powder and fruit"
+        ]
+        },
+        "lunch": {
+        "name": "Leftovers from Dinner or Restaurant Salad",
+        "calories": "450",
+        "macros": {
+            "protein": "20-25g",
+            "carbs": "40-50g",
+            "fats": "20-25g"
+        },
+        "ingredients": [
+            "Utilize leftovers from previous dinners or choose a hearty salad from a restaurant with vegetarian protein sources like beans, lentils, or paneer. Be mindful of dressings and portion sizes when eating out."
+        ],
+        "alternatives": [
+            "If no leftovers, prepare a quick quinoa or pasta salad with vegetables and beans.",
+            "Order a vegetarian-friendly takeout like a veggie bowl or wrap, focusing on whole grains and protein."
+        ]
+        },
+        "pre_workout": {
+        "name": "Fruit and Nut Mix",
+        "calories": "250",
+        "macros": {
+            "protein": "7g",
+            "carbs": "25g",
+            "fats": "15g"
+        },
+        "ingredients": [
+            "Small handful of mixed nuts (almonds, walnuts, cashews)",
+            "Small portion of dried fruit (raisins, cranberries)",
+            "Optional: seeds like pumpkin or sunflower"
+        ],
+        "alternatives": [
+            "Protein bar (vegetarian, low sugar)",
+            "Greek yogurt with fruit and a sprinkle of granola"
+        ]
+        },
+        "dinner": {
+        "name": "Homemade Vegetarian Pizza",
+        "calories": "600",
+        "macros": {
+            "protein": "25g",
+            "carbs": "70g",
+            "fats": "25g"
+        },
+        "ingredients": [
+            "Whole wheat pizza crust",
+            "Tomato sauce",
+            "Vegetables (peppers, onions, mushrooms, spinach)",
+            "Vegetarian cheese (mozzarella or vegan cheese)",
+            "Optional: olives, artichoke hearts"
+        ],
+        "alternatives": [
+            "Vegetable and bean casserole",
+            "Stir-fry with tofu or tempeh and noodles"
+        ]
+        }
+    },
+    "Sunday": {
+        "breakfast": {
+        "name": "Poha with Vegetables",
+        "calories": "380",
+        "macros": {
+            "protein": "10g",
+            "carbs": "60g",
+            "fats": "10g"
+        },
+        "ingredients": [
+            "1.5 cups Poha (flattened rice)",
+            "1 cup Mixed vegetables (peas, carrots, potatoes)",
+            "Onions, spices (turmeric, mustard seeds, curry leaves)",
+            "Lemon juice, cilantro"
+        ],
+        "alternatives": [
+            "Upma with vegetables and nuts",
+            "Idli and sambar (portion controlled on idli)"
+        ]
+        },
+        "lunch": {
+        "name": "Rajma Chawal (Kidney Bean Curry with Rice)",
+        "calories": "450",
+        "macros": {
+            "protein": "20g",
+            "carbs": "65g",
+            "fats": "10g"
+        },
+        "ingredients": [
+            "1.5 cups Rajma curry (kidney bean curry)",
+            "1 cup Cooked brown rice"
+        ],
+        "alternatives": [
+            "Chole Bhature (portion controlled on Bhature - deep-fried bread)",
+            "Dal and rice with a side of vegetables"
+        ]
+        },
+        "pre_workout": {
+        "name": "Dates and Almonds",
+        "calories": "220",
+        "macros": {
+            "protein": "5g",
+            "carbs": "30g",
+            "fats": "10g"
+        },
+        "ingredients": [
+            "3-4 Dates",
+            "10-12 Almonds"
+        ],
+        "alternatives": [
+            "Small smoothie with fruit and protein powder",
+            "Energy bites made with oats, nuts, and seeds"
+        ]
+        },
+        "dinner": {
+        "name": "Vegetarian Enchiladas",
+        "calories": "550",
+        "macros": {
+            "protein": "25g",
+            "carbs": "60g",
+            "fats": "25g"
+        },
+        "ingredients": [
+            "2-3 Vegetarian enchiladas (corn tortillas filled with beans, vegetables, and cheese)",
+            "Enchilada sauce",
+            "Optional: toppings like avocado, salsa, sour cream (vegetarian)"
+        ],
+        "alternatives": [
+            "Lentil loaf with roasted vegetables",
+            "Vegetarian chili with whole wheat cornbread"
+        ]
+        }
+    }
+    }
+}
+}
