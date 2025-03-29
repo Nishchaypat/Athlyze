@@ -419,6 +419,7 @@ typer==0.15.1
 types-cachetools==5.5.0.20240820
 types-requests==2.32.0.20241016
 typing-inspect==0.9.0
+typing_extensions==4.12.2
 tzdata==2024.2
 ujson==5.10.0
 uncurl==0.0.11
