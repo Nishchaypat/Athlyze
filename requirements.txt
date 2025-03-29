@@ -145,7 +145,7 @@ html5lib==1.1
 httpcore==1.0.7
 httplib2==0.22.0
 httptools==0.6.4
-httpx==0.27.2
+httpx==0.28.0
 httpx-sse==0.4.0
 huggingface-hub==0.27.0
 humanfriendly==10.0
@@ -451,5 +451,4 @@ yfinance==0.2.51
 youtube-transcript-api==0.6.3
 zep-python==2.0.2
 zstandard==0.23.0
-httpx==0.28.0
 extra-streamlit-components==0.1.71
