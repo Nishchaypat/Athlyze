@@ -391,3 +391,4 @@ zipp==3.21.0
 zstandard==0.23.0
 tornado>=6.1
 altair>=4.1.0
+extra-streamlit-components==0.1.71
