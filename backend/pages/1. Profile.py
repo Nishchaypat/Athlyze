@@ -53,20 +53,20 @@ notes = "Name: " + name + "Age: " + str(age) + "Experience: " + experience + "No
 
 if st.button("Generate My Plan"):
     st.success("Your personalized plan is being created...")
+    try:
+        with st.spinner("Analyzing your data..."):
+            with concurrent.futures.ThreadPoolExecutor() as executor:
+                future_nutrition = executor.submit(nutrition_flow, session_id, notes, goals)
+                future_training = executor.submit(training_flow, session_id, notes, goals)
 
-    with st.spinner("Analyzing your data..."):
-        with concurrent.futures.ThreadPoolExecutor() as executor:
-            future_nutrition = executor.submit(nutrition_flow, session_id, notes, goals)
-            future_training = executor.submit(training_flow, session_id, notes, goals)
-
-            status_nutrition = future_nutrition.result()
-            status_training = future_training.result()
+                status_nutrition = future_nutrition.result()
+                status_training = future_training.result()
 
 
-    if status_nutrition == "Success":
-        st.subheader("Your AI-Powered Plan has been created")
-        st.write("**Physical Training:** Check the Calendar")
-        st.write("**Nutrition Plan:** Check the Nutrition")
-        st.write("Also, check the Training and Nutrition Principles")
-    else:
-        st.error("Something went wrong. Please try again.")
+        if status_nutrition == "Success":
+            st.subheader("Your AI-Powered Plan has been created")
+            st.write("**Physical Training:** Check the Calendar")
+            st.write("**Nutrition Plan:** Check the Nutrition")
+            st.write("Also, check the Training and Nutrition Principles")
+    except Exception as e:
+        st.error("Something went wrong. Please try again. Error: " + str(e))
