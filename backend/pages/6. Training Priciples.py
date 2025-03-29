@@ -52,7 +52,7 @@ st.markdown("""
 
 def load_training_principles():
     """Load the training principles from a JSON file or return a default structured JSON."""
-    file_path = f"/Users/npatel237/Athlyze/backend/database/{session_id}_training_principles.json"
+    file_path = "/Users/npatel237/Athlyze/backend/database/your_training_principles.json"
     
     try:
         with open(file_path, 'r') as file:

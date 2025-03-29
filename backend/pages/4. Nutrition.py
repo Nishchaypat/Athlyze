@@ -77,7 +77,7 @@ st.markdown("""
 def load_nutrition_plan():
     """Load the nutrition plan from the JSON file."""
     try:
-        file_path = f"/Users/npatel237/Athlyze/backend/database/{session_id}_nutrition_plan.json"
+        file_path = "/Users/npatel237/Athlyze/backend/database/your_nutrition_plan.json"
         print(file_path)
         if os.path.exists(file_path):
             with open(file_path, 'r') as file:

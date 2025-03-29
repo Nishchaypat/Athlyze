@@ -54,7 +54,7 @@ st.markdown("""
 
 def load_training_principles():
     """Load the training principles from a JSON file or return default data."""
-    file_path = f"/Users/npatel237/Athlyze/backend/database/{session_id}_nutrition_principles.json"
+    file_path = "/Users/npatel237/Athlyze/backend/database/your_nutrition_principles.json"
     if os.path.exists(file_path):
         with open(file_path, 'r') as file:
             return json.load(file)

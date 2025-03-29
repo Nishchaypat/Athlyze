@@ -137,8 +137,8 @@ def run_the_flow(name, notes, goals):
     result[0]
     extra = (dict(extracted_data.outputs[1].results['text'])['data']['text'])
 
-    save_json_data(schedule, f"{name}_nutrition_plan.json")
-    save_json_data(extra, f"{name}_nutrition_principles.json")
+    save_json_data(schedule, "your_nutrition_plan.json")
+    save_json_data(extra, "your_nutrition_principles.json")
 
     return "Success"
 
