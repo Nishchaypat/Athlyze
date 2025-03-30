@@ -66,7 +66,7 @@ The rising demand for personalized health solutions has exposed the limitations 
 
 Current fitness and nutrition applications rely on predefined algorithms and static models, limiting their ability to deliver personalized, data-driven insights. These traditional approaches struggle to adapt to individual user needs, often resulting in generic recommendations that fail to account for variations in physiology, diet, and fitness goals.
 
-\subsection{limitations of conventional fitness applications}
+\subsection{Limitations of conventional fitness applications}
 
 Users relying on existing fitness applications encounter several inefficiencies that hinder effectiveness and validation:\\
 
@@ -81,7 +81,7 @@ Users relying on existing fitness applications encounter several inefficiencies 
 \end{equation}
 \end{itemize}
 
-\subsection{inadequate data extraction and cleaning}  
+\subsection{Inadequate data extraction and cleaning}  
 Initial attempts with conventional tools revealed critical flaws:  
 
 \begin{table}[h]  
@@ -109,7 +109,7 @@ Traditional tools, such as PyPDF2 and Google Document AI, struggle with extracti
 
 These challenges highlight the need for a more efficient and structurally aware data extraction approach.  
 
-\subsection{static chunking failures}  
+\subsection{Static chunking failures}  
 Fixed-size chunking methods in conventional data processing cause significant semantic fragmentation:  
 
 \begin{equation}  
@@ -125,7 +125,7 @@ Traditional approaches often segment text arbitrarily, leading to:
 
 These limitations hinder effective information extraction and retrieval, making conventional methods unsuitable for complex, research-driven applications.  
 
-\subsection{scientific disconnect}
+\subsection{Scientific disconnect}
 Existing systems demonstrate poor or no integration with scientific literature, significantly limiting evidence-based decision-making and suggestions for the user.\\
 
 These challenges highlight the need for adaptive chunking and scientifically grounded retrieval mechanisms to improve information relevance and accuracy.  
@@ -134,7 +134,7 @@ These challenges highlight the need for adaptive chunking and scientifically gro
 
 Retrieval-Augmented Generation (RAG) is a versatile framework in natural language processing (NLP) that combines the capabilities of information retrieval systems with generative models to enhance the quality and relevance of generated text. Unlike traditional approaches that rely solely on generative models or retrieval systems, RAG integrates both methods to create responses grounded in external knowledge while maintaining the flexibility of language generation. \cite{1} \cite{2}
 
-\subsection{key components of rag}
+\subsection{Key components of RAG}
 
 \begin{itemize}
 \item \textbf{Information Retrieval:} Extracts relevant data or text from external knowledge sources, ensuring responses are contextually informed.
@@ -149,6 +149,7 @@ Retrieval-Augmented Generation (RAG) is a versatile framework in natural languag
     \label{fig:RAG}
 \end{figure}
 
+\subsection{Limitation of Naive RAG}
 
 \begin{itemize}
 \item \textbf{Irrelevant Retrieval:} RAG systems often struggle to filter out irrelevant or tangential data retrieved from external sources. This can lead to responses that, while coherent, fail to directly address user queries or provide actionable insights, which is critical for Athlyze's focus on precise academic or administrative inquiries.
@@ -191,7 +192,7 @@ Through these innovations, Agentic RAG enhances both the efficiency and accuracy
 \section{proposed approach}
 Athlyze integrates multiple modules into a cohesive and parallel pipeline designed to enhance fitness and nutrition recommendations. The system follows two parallel structured agentic AI workflow to ensure scientifically accurate fitness recommendations through controlled generative outputs with quicker throughput. The overall steps revolving around the entire application are:
 
-\subsection{data and text preprocessing}
+\subsection{Data and Text preprocessing}
 The data preprocessing pipeline is critical for ensuring the accuracy of the extracted information. The text is to be collected from around 10 research papers each in muscle and nutrition domain.
 
 \begin{itemize}
@@ -214,7 +215,7 @@ class AgenticChunker:
         return 'yes' in Gemini(prompt).content.lower()
 \end{lstlisting}
 
-\subsection{embedding generation and vector db integration}
+\subsection{Embedding Generation and Vector DB integration}
 The preprocessing stage leads into embedding generation, facilitating the creation of a robust and efficient search and retrieval system.
 
 \textbf{Embedding Generation:}
@@ -242,7 +243,7 @@ The research repository is stored in AstraDB, embedding 1,703 rows of muscle tra
     \end{tabular}
 \end{table}
 
-\subsection{multi-agent architecture in langflow}
+\subsection{Multi-agent Architecture in Langflow}
 Athlyze's multi-agent system employs Langflow \cite{6} to orchestrate a set of autonomous agents. These agents handle the following key tasks:
 
 \begin{itemize}
@@ -251,7 +252,7 @@ Athlyze's multi-agent system employs Langflow \cite{6} to orchestrate a set of a
     \item \textbf{Plan Generation:} Dynamically creates personalized recommendations by integrating the retrieved research data and user profile with extensive prompt engineering passing all these into a reasoning and thinking Google model: gemini-2.0-flash-thinking
 \end{itemize}
 
-\subsection{agentic prompt chaining system}
+\subsection{Agentic prompt chaining system}
 To ensure evidence-based and structured recommendations, the system employs a four-stage agentic workflow. This approach systematically integrates user-specific data with scientific research to generate a personalized fitness and nutrition plan while maintaining consistency through schema-constrained generation.
 
 \begin{itemize}
@@ -298,7 +299,7 @@ To ensure evidence-based and structured recommendations, the system employs a fo
     This guarantees that all outputs adhere to a predefined structure, preventing inconsistencies in data representation.
 \end{itemize}
 
-\subsection{hierarchical multi-stage model deployment}
+\subsection{Hierarchical multi-agentic models}
 The system utilizes a hierarchical multi-stage approach with three distinct instances of the \texttt{gemini-2.0-flash-thinking} model, each optimized for a specific task. To balance precision, diversity, and structured generation, the models are fine-tuned with varying temperature settings and system instructions.
 
 \begin{itemize}
@@ -374,8 +375,8 @@ The system utilizes a hierarchical multi-stage approach with three distinct inst
 
 \begin{figure}[h!]
     \centering
-    \includegraphics[width=0.95\linewidth]{MyAgenticRAG.png}
-    \caption{MY Agentic RAG.}
+    \includegraphics[width=0.95\linewidth]{Final_Flow.png}
+    \caption{Athlyze Agentic RAG flow.}
     \label{fig:RAG}
 \end{figure}
 
@@ -383,9 +384,9 @@ The system utilizes a hierarchical multi-stage approach with three distinct inst
 
 To evaluate the performance and effectiveness of the Athlyze platform, we conducted a thorough performance analysis. This included assessing the system's efficiency, accuracy in generating personalized fitness and nutrition plans, and the overall user experience. The evaluation focused on key metrics such as response time, embedding quality, and user satisfaction.
 
-\subsection{key metrics for evaluation}
+\subsection{Key metrics for evaluation}
 
-\subsubsection{system efficiency}
+\subsubsection{System efficiency}
 
 \begin{itemize}
     \item \textbf{Reduced Response Time:} Athlyze employs an efficient data processing pipeline that optimizes the time between query generation and the final output. In our testing, we observed an average response time that ranged from 24.22 seconds to 41.03 seconds depending on user profile input size.
@@ -393,7 +394,7 @@ To evaluate the performance and effectiveness of the Athlyze platform, we conduc
     \item \textbf{Minimal API Calls:} Athlyze successfully reduced the number of API calls required to generate a personalized schedule. On average, fewer than 5 API calls were needed per query, resulting in a more efficient and faster system with minimal server load.
 \end{itemize}
 
-\subsubsection{execution time analysis based on user profile}
+\subsubsection{Execution time analysis based on user profile}
 
 \begin{table}[h!]
 \centering
@@ -415,7 +416,7 @@ To evaluate the performance and effectiveness of the Athlyze platform, we conduc
 
 The times show a variation based on the complexity of the user's profile (e.g., more goals, more detailed preferences). However, across all tests, the execution time remained within the desired range, ensuring a fast and responsive experience.
 
-\subsubsection{embedding quality analysis}
+\subsubsection{Embedding quality analysis}
 
 The embedding system in Athlyze plays a critical role in ensuring that personalized fitness and nutrition plans are scientifically grounded and contextually relevant. Here's an analysis of the embedding quality:
 
@@ -431,7 +432,7 @@ The embedding system in Athlyze plays a critical role in ensuring that personali
 
 \textbf{Combined Interpretation:} Athlyze's embedding model demonstrates strong semantic understanding by clustering related concepts together while preserving the distinctiveness of each individual piece of content. This ensures that the generated fitness and nutrition plans are both personalized and relevant, capturing the diverse needs and goals of users.
 
-\subsubsection{response accuracy}
+\subsubsection{Response accuracy}
 
 \begin{itemize}
     \item \textbf{Personalized Fitness Plans:} Athlyze was tested on a set of 20 diverse user profiles, each containing specific goals and dietary preferences. The model successfully generated 18 fully personalized fitness and training plans, with 2 requiring minor adjustments based on user feedback.
@@ -439,7 +440,7 @@ The embedding system in Athlyze plays a critical role in ensuring that personali
     \item \textbf{Accuracy Achieved:} Athlyze achieved a response accuracy of 90\% in generating accurate and useful fitness and nutrition plans based on user input.
 \end{itemize}
 
-\subsubsection{user satisfaction}
+\subsubsection{User satisfaction}
 
 \begin{itemize}
     \item \textbf{Enhanced User Experience:} The personalized and scientifically-backed fitness and nutrition plans significantly improved user satisfaction, with many users reporting that the platform made it easier to stick to their goals.
