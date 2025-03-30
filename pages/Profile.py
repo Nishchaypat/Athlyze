@@ -3,7 +3,6 @@ import sys
 import os
 import time
 import uuid
-import concurrent.futures
 import extra_streamlit_components as stx
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../")))
@@ -55,20 +54,11 @@ if st.button("Generate My Plan"):
     st.success("Your personalized plan is being created...")
     try:
         with st.spinner("Analyzing your data..."):
-            try:
-                with concurrent.futures.ThreadPoolExecutor() as executor:
-                    future_nutrition = executor.submit(nutrition_flow, name, notes, goals)
-                    future_training = executor.submit(training_flow, name, notes, goals)
+            future_nutrition = nutrition_flow (name, notes, goals)
+            future_training = training_flow (name, notes, goals)
 
-                    status_nutrition = future_nutrition.result()
-                    status_training = future_training.result()
-            except:
-                with st.spinner("Analyzing your data without parallel thread, might take around a minute..."):
-                    future_nutrition = executor.submit(nutrition_flow, name, notes, goals)
-                    future_training = executor.submit(training_flow, name, notes, goals)
-
-                    status_nutrition = future_nutrition.result()
-                    status_training = future_training.result()
+            status_nutrition = future_nutrition
+            status_training = future_training
 
 
         if status_nutrition == "Success":
