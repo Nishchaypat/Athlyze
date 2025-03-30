@@ -43,11 +43,11 @@ RAG, Agentic RAG, Semantic Chunking, Fitness Applications, Vector Databases, Con
 \end{IEEEkeywords}
 
 \section{Introduction}
-The increasing demand for personalized fitness and nutrition solutions has exposed the limitations of traditional applications, which rely on static algorithms and predefined templates. These conventional systems fail to consider the complexities of individual physiology, dietary needs, and training goals, often leading to generic recommendations that lack scientific rigor. Research highlights that customized fitness and nutrition plans significantly improve adherence and outcomes, yet most existing applications, such as MyFitnessPal and Fitbit, depend on rule-based methodologies that overlook dynamic, research-backed insights.
+The increasing demand for personalized fitness and nutrition solutions has exposed the limitations of traditional applications, which rely on static algorithms and predefined templates. These conventional systems fail to consider the complexities of individual physiology, dietary needs, and training goals, often leading to generic recommendations that lack scientific rigor\cite{9}. Research highlights that customized fitness and nutrition plans significantly improve adherence and outcomes, yet most existing applications, such as MyFitnessPal and Fitbit, depend on rule-based methodologies that overlook dynamic, research-backed insights.
 
-Athlyze presents an Agentic Retrieval-Augmented Generation (RAG) solution that bridges this gap by integrating scientific literature and machine learning-driven personalization into a cohesive system. Unlike conventional fitness applications, Athlyze utilizes a vector database embedded with research papers on muscle development, nutrition, and physical training principles, allowing users to receive tailored, evidence-based recommendations. By incorporating clustering algorithms, regression models, and adaptive recommendation systems, Athlyze dynamically adjusts fitness and dietary plans to align with user profiles, optimizing outcomes based on scientific data and real-time feedback.
+Athlyze presents an Agentic Retrieval-Augmented Generation (RAG) solution that bridges this gap by integrating scientific literature and machine learning-driven personalization into a cohesive system. Unlike conventional fitness applications, Athlyze utilizes a vector database embedded with research papers on muscle development, nutrition, and physical training principles, allowing users to receive tailored, evidence-based recommendations \cite{5}. By incorporating clustering algorithms, regression models, and adaptive recommendation systems, Athlyze dynamically adjusts fitness and dietary plans to align with user profiles, optimizing outcomes based on scientific data and real-time feedback.
 
-Preliminary studies suggest that AI-driven recommendation systems enhance engagement and adherence rates by over 30\%, demonstrating the value of machine learning and NLP in health optimization. Athlyze builds on this by employing Google Cloud Platform (GCP), GEMINI, LangFlow, and AstraDB, ensuring a scalable and efficient implementation for retrieval-augmented recommendations. By combining semantic search with ML-driven user segmentation, Athlyze refines its guidance over time, making it a comprehensive, research-backed approach to fitness and nutrition planning.
+Preliminary studies suggest that AI-driven recommendation systems enhance engagement and adherence rates by over 30\%, demonstrating the value of machine learning and NLP in health optimization \cite{10}. Athlyze builds on this by employing Google Cloud Platform (GCP), GEMINI, LangFlow, and AstraDB, ensuring a scalable and efficient implementation for retrieval-augmented recommendations. By combining semantic search with ML-driven user segmentation, Athlyze refines its guidance over time, making it a comprehensive, research-backed approach to fitness and nutrition planning.
 
 Beyond personalization, Athlyze advances the intersection of AI, fitness, and nutritional science, providing users with real-time, research-driven insights into training methodologies and dietary principles. This study explores the scalability and effectiveness of an Agentic RAG-based system in transforming physical training and nutrition planning, paving the way for a data-driven, adaptive approach to muscle-building and health optimization.
 
@@ -72,9 +72,9 @@ Users relying on existing fitness applications encounter several inefficiencies 
 
 \begin{itemize}
 	\item Rigid Algorithmic Models: Most fitness platforms use rule-based heuristics that fail to dynamically adapt to evolving user progress, dietary habits, or exercise performance. This results in stagnant recommendations that do not reflect real-time needs.
-	\item Lack of Scientific Integration: Existing applications seldom incorporate peer-reviewed research on nutrition, muscle development, and exercise physiology, leading to recommendations that may not align with scientific best practices.
+	\item Lack of Scientific Integration: Existing applications seldom incorporate peer-reviewed research on nutrition, muscle development, and exercise physiology, leading to recommendations that may not align with scientific best practices. \cite{7}
 	\item One-Size-Fits-All Approach: Most fitness apps segment users into broad categories rather than leveraging granular, personalized insights. This lack of adaptive learning results in suboptimal fitness plans and nutritional guidance.
-	\item User Drop-off Due to Frustration: Inaccurate or overly generalized recommendations often cause users to disengage, leading to low retention rates and decreased motivation.
+	\item User Drop-off Due to Frustration: Inaccurate or overly generalized recommendations often cause users to disengage, leading to low retention rates and decreased motivation. \cite{8}
         \item This limitation can be represented mathematically as:
             \begin{equation}
             \text{Error Rate} \propto \frac{\text{Static Templates}}{\text{Research Integration}} \times \text{User Complexity}
@@ -132,7 +132,7 @@ These challenges highlight the need for adaptive chunking and scientifically gro
 
 \section{Retrieval-Augmented Generation (RAG)}
 
-Retrieval-Augmented Generation (RAG) is a versatile framework in natural language processing (NLP) that combines the capabilities of information retrieval systems with generative models to enhance the quality and relevance of generated text. Unlike traditional approaches that rely solely on generative models or retrieval systems, RAG integrates both methods to create responses grounded in external knowledge while maintaining the flexibility of language generation.
+Retrieval-Augmented Generation (RAG) is a versatile framework in natural language processing (NLP) that combines the capabilities of information retrieval systems with generative models to enhance the quality and relevance of generated text. Unlike traditional approaches that rely solely on generative models or retrieval systems, RAG integrates both methods to create responses grounded in external knowledge while maintaining the flexibility of language generation. \cite{1} \cite{2}
 
 \subsection{Key Components of RAG}
 
@@ -145,7 +145,7 @@ Retrieval-Augmented Generation (RAG) is a versatile framework in natural languag
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.95\linewidth]{RAG.png}
-    \caption{Naive RAG (adapted from \cite{16}).}
+    \caption{Naive RAG (adapted from \cite{12}).}
     \label{fig:RAG}
 \end{figure}
 
@@ -160,24 +160,30 @@ Retrieval-Augmented Generation (RAG) is a versatile framework in natural languag
 
 \section{Agentic Retrieval-Augmented Generation (RAG)}
 
-Agentic Retrieval-Augmented Generation (RAG) is a cutting-edge framework that integrates retrieval-based techniques with generative models, allowing for the dynamic processing of information. Building upon IBM’s principles of agentic chunking \cite{2}, RAG incorporates the following key concepts:
+Agentic Retrieval-Augmented Generation (RAG) represents a significant advancement in retrieval-based AI systems, integrating retrieval mechanisms with generative models to provide more contextually relevant and semantically accurate outputs. Unlike traditional RAG frameworks, which operate with static chunking and predefined retrieval structures, the agentic approach dynamically adapts to input variations, optimizing content retrieval and synthesis in real time.  
+
+Building on IBM’s principles of agentic chunking, this approach ensures that information is structured in a way that enhances both retrieval precision and generative consistency. The key methodologies enabling this refinement include:
 
 \begin{itemize}
-    \item \textbf{Dynamic Proposition Handling:} This involves adaptively adjusting the chunk boundaries based on the evolving context of the input data, ensuring that each chunk maintains coherent semantic meaning during retrieval and generation.
-    \item \textbf{Metadata-Enriched Segmentation:} RAG systems segment data into chunks that are augmented with structured metadata, such as content type, source, and creation time, to improve the accuracy of the retrieval process and the relevance of the generated content.
-    \item \textbf{Recursive Merging:} In order to enhance coherence, RAG applies recursive merging, where smaller chunks are merged based on their semantic similarity. The optimal threshold ($\alpha=0.63$) is often used to control how closely related chunks should be before merging.
+    \item \textbf{Dynamic Proposition Handling:} Adjusts chunk boundaries in response to the evolving context, ensuring that retrieved segments maintain logical and semantic integrity. This adaptive mechanism enhances the system’s ability to generate coherent responses by preserving meaningful relationships between data points. \cite{12}
+    \item \textbf{Metadata-Enriched Segmentation:} Incorporates structured metadata—such as content type, source credibility, temporal attributes, and hierarchical positioning—into chunked segments. This additional layer of information enhances retrieval efficiency by allowing models to weigh contextual importance during generation. \cite{4}
+    \item \textbf{Recursive Merging:} Employs an iterative approach to combine semantically similar chunks, preventing fragmentation of related concepts. By utilizing an optimal similarity threshold ($\alpha=0.63$), RAG systems ensure that information is aggregated in a way that maintains coherence without diluting specificity. \cite{13}
 \end{itemize}
 
-These elements combine to create a system capable of retrieving and generating information that is highly relevant, contextually accurate, and semantically consistent. Specifically:
+These foundational techniques empower RAG systems to retrieve and generate responses that are more accurate, context-aware, and semantically aligned with user queries. Additionally, the integration of agentic chunking plays a critical role in refining data processing by:
+
 \begin{itemize}
-    \item \textbf{Agentic Chunking:} RAG systems utilize language models like Gemini to dynamically determine the boundaries of chunks based on the underlying content. This ensures that text fragments are optimally sized and semantically cohesive for further processing.
-    \item \textbf{Metadata-Enriched Segmentation:} Each chunk in a RAG system is enhanced with metadata that provides additional context for more accurate and context-aware retrieval. This metadata can include details like the source of the information, the type of content, and the time of creation, improving both retrieval efficiency and relevance.
+    \item \textbf{Optimized Chunking Strategy:} Unlike static chunking, agentic chunking dynamically determines optimal segment boundaries, ensuring that each text fragment is neither too granular nor excessively broad. This enhances both retrieval effectiveness and generative fluency. \cite{3}
+    \item \textbf{Adaptive Context Management:} By continuously analyzing incoming queries and retrieved knowledge, the system dynamically refines retrieval strategies, prioritizing the most contextually relevant information while filtering out redundancies or unrelated content.
+    \item \textbf{Efficient Knowledge Integration:} The structured combination of retrieved documents and user-specific queries results in a knowledge synthesis process that improves response consistency and factual accuracy.
 \end{itemize}
+
+Through these innovations, Agentic RAG enhances both the efficiency and accuracy of retrieval-augmented systems, making it particularly valuable for domains requiring complex knowledge synthesis, such as legal research, academic inquiry, and domain-specific AI assistants. By enabling more precise retrieval, structured knowledge representation, and adaptive generative capabilities, RAG systems powered by agentic principles push the boundaries of contextual AI applications.
 
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.95\linewidth]{AgenticRAG.png}
-    \caption{Agentic RAG (adapted from \cite{16}).}
+    \caption{Agentic RAG (adapted from \cite{12}).}
     \label{fig:RAG}
 \end{figure}
 
@@ -237,7 +243,7 @@ The research repository is stored in AstraDB, embedding 1,703 rows of muscle tra
 \end{table}
 
 \subsection{Multi-Agent Architecture in Langflow}
-Athlyze's multi-agent system employs Langflow to orchestrate a set of autonomous agents. These agents handle the following key tasks:
+Athlyze's multi-agent system employs Langflow \cite{6} to orchestrate a set of autonomous agents. These agents handle the following key tasks:
 
 \begin{itemize}
     \item \textbf{User Profiling:} Gathers users detailed demographic, dietary, and exercise-related data to build personalized user profiles.
@@ -462,28 +468,37 @@ Athlyze demonstrates better personalization than conventional systems through ag
 Future research will focus on:
 \begin{itemize}
     \item \textbf{Multimodal Embeddings:} Incorporating visual data (e.g., exercise diagrams) into the vector space.
-    \item \textbf{Real-Time Integration:} Automating research updates via real-time PubMed API ingestion.
-    \item \textbf{Causal Recommendation Models:} Leveraging do-calculus to model nutrient and training causality.
+    \item \textbf{Real-Time Integration:} Automating research updates via real-time PubMed API ingestion. \cite{11}
+    \item \textbf{Causal Recommendation Models:} Leveraging do-calculus to model nutrient and training causality. \cite{5}
     \item \textbf{Enhanced Agentic Flows:} Expanding the Langflow agent ecosystem and integrating additional external tools.\\
 \end{itemize}
 
 \begin{thebibliography}{00}
-\bibitem{1} Data Preprocessing Techniques Examples, \url{https://www.restack.io/p/data-preprocessing-knowledge-answer-techniques-examples-cat-ai}.
-\bibitem{2} IBM, "Agentic Chunking with LangChain", 2025
-\bibitem{3} Top 10 Data Cleaning Techniques and Best Practices for 2024, \url{https://www.ccslearningacademy.com/top-data-cleaning-techniques/}.
-\bibitem{4} Chunking Strategies For Production-Grade RAG Applications, \url{https://www.helicone.ai/blog/rag-chunking-strategies}.
-\bibitem{5} Weaviate, "What is Agentic RAG", 2024
-\bibitem{6} Simplifying Vector Embedding Generation with Astra Vectorize, \url{https://www.datastax.com/blog/simplifying-vector-embedding-generation-with-astra-vectorize}.
-\bibitem{7} Auto-generate Embeddings with Vectorize, \url{https://docs.datastax.com/en/astra-db-serverless/databases/embedding-generation.html}.
-\bibitem{8} F22 Labs, "7 Chunking Strategies", 2024
-\bibitem{9} Vector Search for Enterprise AI Applications on Astra DB, \url{https://www.datastax.com/products/vector-search}.
-\bibitem{10} Agents and Tools in Langflow, \url{https://docs.langflow.org/components-agents}.
-\bibitem{11} What is Prompt Engineering? Techniques and Applications, \url{https://www.spiceworks.com/tech/artificial-intelligence/articles/what-is-prompt-engineering/}.
-\bibitem{12} RAG Prompt Engineering Makes LLMs Super Smart, \url{https://www.k2view.com/blog/rag-prompt-engineering/}.
-\bibitem{13} Prompts in Langflow, \url{https://docs.langflow.org/components-prompts}.
-\bibitem{14} Data Preprocessing in Machine Learning Best Practices, \url{https://intelliarts.com/blog/data-preprocessing-in-machine-learning-best-practices/}.
-\bibitem{15} The Complete Guide to Prompt Engineering, \url{https://portkey.ai/blog/the-complete-guide-to-prompt-engineering}.
-\bibitem{16} AGENTIC RETRIEVAL-AUGMENTED GENERATION: A SURVEY ON
-AGENTIC RAG, \url{https://arxiv.org/pdf/2501.09136}.
+\bibitem{1} Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks, \url{https://arxiv.org/abs/2005.11401}
+
+\bibitem{2} RAG, AI Agents, and Agentic RAG: An In-Depth Review, \url{https://www.digitalocean.com/community/conceptual-articles/rag-ai-agents-agentic-rag-comparative-analysis}
+
+\bibitem{3} Agentic Chunking: Enhancing RAG Answers for Completeness and Accuracy, \url{https://alhena.ai/blog/agentic-chunking-enhancing-rag-answers-for-completeness-and-accuracy}
+
+\bibitem{4} Agentic RAG: How It Works, Use Cases, Comparison With RAG, \url{https://www.datacamp.com/blog/agentic-rag}
+
+\bibitem{5} Concept Embedding Generation for Large Language Models, \url{https://openreview.net/forum?id=Fkr1yVUb9G}
+
+\bibitem{6} Langflow Documentation: Multi-Agent Workflow Orchestration, \url{https://docs.langflow.org}
+
+\bibitem{7} AI Nutrition Recommendation Using Deep Generative Models, \url{https://www.nature.com/articles/s41598-024-65438-x}
+
+\bibitem{8} AI Trends in Fitness: Personalized Training \& Nutrition, \url{https://3dlook.ai/content-hub/ai-in-fitness-industry}
+
+\bibitem{9} Artificial Intelligence in Exercise Programming, \url{https://doi.org/10.3389/fpubh.2025.1510801}
+
+\bibitem{10} AI-Driven Metabolic Optimization, \url{https://www.nestacertified.com/the-future-of-fitness-ai-driven-solutions}
+
+\bibitem{11} Smart Devices for Tele-Exercise, \url{https://pmc.ncbi.nlm.nih.gov/articles/PMC10298072}
+
+\bibitem{12} Agentic Retrival-Augmented Generation: A Survey On Agentic Rag, \url{https://arxiv.org/pdf/2501.09136}.
+
+\bibitem{13} IBM, "Agentic Chunking with LangChain", \url{https://www.ibm.com/think/tutorials/use-agentic-chunking-to-optimize-llm-inputs-with-langchain-watsonx-ai}.
+
 \end{thebibliography}
 \end{document}
