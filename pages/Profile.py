@@ -63,11 +63,12 @@ if st.button("Generate My Plan"):
                     status_nutrition = future_nutrition.result()
                     status_training = future_training.result()
             except:
-                future_nutrition = executor.submit(nutrition_flow, name, notes, goals)
-                future_training = executor.submit(training_flow, name, notes, goals)
+                with st.spinner("Analyzing your data without parallel thread, might take around a minute..."):
+                    future_nutrition = executor.submit(nutrition_flow, name, notes, goals)
+                    future_training = executor.submit(training_flow, name, notes, goals)
 
-                status_nutrition = future_nutrition.result()
-                status_training = future_training.result()
+                    status_nutrition = future_nutrition.result()
+                    status_training = future_training.result()
 
 
         if status_nutrition == "Success":
