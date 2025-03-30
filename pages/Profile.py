@@ -4,6 +4,7 @@ import os
 import time
 import uuid
 import extra_streamlit_components as stx
+import asyncio
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "../")))
 
@@ -27,7 +28,6 @@ if session_id is None:
 # Store session_id in session state for intra-page access
 st.session_state["session_id"] = session_id
 
-
 print("Profile Session ID::", session_id)
 
 st.title("Your Profile")
@@ -50,21 +50,34 @@ I really want to get good ass and butt. Lose: I want to lose fat in my thigh reg
 
 notes = "Name: " + name + "Age: " + str(age) + "Experience: " + experience + "Notes: " + notes
 
+# Wrap your synchronous functions in async functions
+async def async_nutrition_flow(name, notes, goals):
+    loop = asyncio.get_event_loop()
+    return await loop.run_in_executor(None, nutrition_flow, name, notes, goals)
+
+async def async_training_flow(name, notes, goals):
+    loop = asyncio.get_event_loop()
+    return await loop.run_in_executor(None, training_flow, name, notes, goals)
+
+async def run_flows_concurrently(name, notes, goals):
+    # Run both flows concurrently and wait for them to finish
+    nutrition_result, training_result = await asyncio.gather(
+        async_nutrition_flow(name, notes, goals),
+        async_training_flow(name, notes, goals)
+    )
+    return nutrition_result, training_result
+
 if st.button("Generate My Plan"):
     st.success("Your personalized plan is being created...")
     try:
         with st.spinner("Analyzing your data..."):
-            future_nutrition = nutrition_flow (name, notes, goals)
-            future_training = training_flow (name, notes, goals)
-
-            status_nutrition = future_nutrition
-            status_training = future_training
-
+            # Execute both flows in parallel
+            status_nutrition, status_training = asyncio.run(run_flows_concurrently(name, notes, goals))
 
         if status_nutrition == "Success":
             st.subheader("Your AI-Powered Plan has been created")
             st.write("**Physical Training:** Check the Calendar")
-            st.write("**Nutrition Plan:** Check the Nutrition")
+            st.write("**Nutrition Plan:** Check the Nutrition") 
             st.write("Also, check the Training and Nutrition Principles")
     except Exception as e:
         st.error("Something went wrong. Please try again. Error: " + str(e))
