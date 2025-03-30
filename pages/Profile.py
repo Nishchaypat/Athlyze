@@ -55,7 +55,14 @@ if st.button("Generate My Plan"):
     st.success("Your personalized plan is being created...")
     try:
         with st.spinner("Analyzing your data..."):
-            with concurrent.futures.ThreadPoolExecutor() as executor:
+            try:
+                with concurrent.futures.ThreadPoolExecutor() as executor:
+                    future_nutrition = executor.submit(nutrition_flow, name, notes, goals)
+                    future_training = executor.submit(training_flow, name, notes, goals)
+
+                    status_nutrition = future_nutrition.result()
+                    status_training = future_training.result()
+            except:
                 future_nutrition = executor.submit(nutrition_flow, name, notes, goals)
                 future_training = executor.submit(training_flow, name, notes, goals)
 
