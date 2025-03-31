@@ -130,7 +130,7 @@ importlib_metadata==8.5.0
 importlib_resources==6.4.5
 inflection==0.5.1
 iniconfig==2.0.0
-instructor==1.7.0
+#instructor==1.7.0
 ipython==8.29.0
 jaraco.context==6.0.1
 jedi==0.19.2
