@@ -105,7 +105,7 @@ google-generativeai==0.8.3
 google-resumable-media==2.7.2
 google_search_results==2.4.2
 googleapis-common-protos==1.66.0
-gotrue==2.11.0
+#gotrue==2.11.0
 gptcache==0.1.44
 grandalf==0.8
 greenlet==3.1.1
