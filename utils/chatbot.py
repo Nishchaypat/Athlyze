@@ -1,10 +1,13 @@
 from langflow.load import run_flow_from_json
+import nest_asyncio  # <-- Add this
+nest_asyncio.apply()  # <-- Add this
 import os
 import json
 from dotenv import load_dotenv
 
 load_dotenv()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+ASTRA_DB_APPLICATION_TOKEN = os.getenv("ASTRA_DB_APPLICATION_TOKEN")
 
 def read_files():
     """
@@ -63,10 +66,10 @@ TWEAKS = {
     "text2": ""
   },
   "GoogleGenerativeAIModel-glg72": {
-    "api_key": {GEMINI_API_KEY},
+    "api_key": GEMINI_API_KEY,
     "input_value": "",
     "max_output_tokens": None,
-    "model_name": "gemini-2.5-pro-exp-03-25",
+    "model_name": "learnlm-1.5-pro-experimental",
     "n": None,
     "stream": False,
     "system_message": "",
@@ -86,7 +89,6 @@ TWEAKS = {
   }
 }
     
-
 result = run_flow_from_json(flow="/Users/npatel237/Athlyze/flow/ChatBot.json",
                             session_id="",
                             input_value="",

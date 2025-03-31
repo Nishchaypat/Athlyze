@@ -994,7 +994,7 @@
             "template": {
               "_type": "Component",
               "api_key": {
-                "load_from_db": true,
+                "load_from_db": false,
                 "required": true,
                 "placeholder": "",
                 "show": true,
@@ -1117,7 +1117,7 @@
                 "placeholder": "",
                 "show": true,
                 "name": "model_name",
-                "value": "gemini-2.5-pro-exp-03-25",
+                "value": "gemini-2.0-flash-thinking-exp-1219",
                 "display_name": "Model",
                 "advanced": false,
                 "dynamic": false,
