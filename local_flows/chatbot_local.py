@@ -17,8 +17,8 @@ def read_files():
     diet_plan = []
     muscle_training = []
 
-    for file in os.listdir("/Users/npatel237/Athlyze/backend/database"):
-        file_path = os.path.join("../backend/database", file)
+    for file in os.listdir("./database"):
+        file_path = os.path.join("./database", file)
         if os.path.isfile(file_path):
             if "nutrition" in file.lower():
                 with open(file_path, 'r') as f:
@@ -89,7 +89,7 @@ TWEAKS = {
   }
 }
     
-result = run_flow_from_json(flow="/Users/npatel237/Athlyze/flow/ChatBot.json",
+result = run_flow_from_json(flow="./flow/Chatbot.json",
                             session_id="",
                             input_value="",
                             fallback_to_env_vars=True,
