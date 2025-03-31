@@ -67,7 +67,7 @@ durationpy==0.9
 ecdsa==0.19.0
 elastic-transport==8.15.1
 elasticsearch==8.16.0
-embedchain==0.1.125
+#embedchain==0.1.125
 emoji==2.14.0
 eval_type_backport==0.2.0
 Events==0.5
