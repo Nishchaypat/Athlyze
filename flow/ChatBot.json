@@ -1117,7 +1117,7 @@
                 "placeholder": "",
                 "show": true,
                 "name": "model_name",
-                "value": "learnlm-1.5-pro-experimental",
+                "value": "gemini-2.5-pro-exp-03-25",
                 "display_name": "Model",
                 "advanced": false,
                 "dynamic": false,

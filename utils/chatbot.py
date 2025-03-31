@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-print(GEMINI_API_KEY)
+
 def read_files():
     """
     Reads files from the backend/database directory and aggregates JSON content
@@ -15,7 +15,7 @@ def read_files():
     muscle_training = []
 
     for file in os.listdir("/Users/npatel237/Athlyze/backend/database"):
-        file_path = os.path.join("backend/database", file)
+        file_path = os.path.join("../backend/database", file)
         if os.path.isfile(file_path):
             if "nutrition" in file.lower():
                 with open(file_path, 'r') as f:
@@ -26,7 +26,6 @@ def read_files():
 
     return diet_plan, muscle_training
 
-# Example usage
 diet_plan, muscle_training = read_files()
 
 TWEAKS = {
@@ -45,7 +44,7 @@ TWEAKS = {
     "files": "",
     "background_color": "",
     "chat_icon": "",
-    "input_value": "",
+    "input_value": "Describe me my diet plan and muscle training schedule",
     "sender": "User",
     "sender_name": "User",
     "session_id": "",
@@ -90,6 +89,8 @@ TWEAKS = {
 
 result = run_flow_from_json(flow="/Users/npatel237/Athlyze/flow/ChatBot.json",
                             session_id="",
-                            input_value="Describe me my diet plan and muscle training",
+                            input_value="",
                             fallback_to_env_vars=True,
                             tweaks=TWEAKS)
+
+print(result)
