@@ -1,0 +1,555 @@
+{
+  "intro": "This nutrition plan is designed for Nishchay, focusing on maintaining a lean physique and supporting general fitness rather than maximizing muscle mass or strength. It emphasizes a balanced approach to nutrition, incorporating a variety of animal-based protein sources as per Nishchay's preference, while ensuring adequate carbohydrate and fat intake for energy and overall health. The plan is structured around moderate-intensity workouts and recreational activities, aligning with Nishchay's fitness goals and training frequency. It prioritizes sustainable dietary habits and mindful eating over rigid calorie counting to promote long-term adherence and avoid potential negative impacts associated with overly strict self-monitoring.",
+  "diet_schedule": {
+    "caloric_needs": {
+      "daily_calories": "2700",
+      "calculation_method": "Mifflin-St Jeor equation for Basal Metabolic Rate (BMR) multiplied by an activity factor of 1.55 (moderate activity level). BMR = (10 x weight in kg) + (6.25 x height in cm) - (5 x age in years) + 5.  Weight = 165 lbs / 2.205 = 74.8 kg. Height = 5'8'' = 68 inches = 172.7 cm. BMR = (10 x 74.8) + (6.25 x 172.7) - (5 x 22) + 5 = 1775 kcal.  TDEE = BMR x 1.55 = 1775 x 1.55 = 2751 kcal. Rounded down to 2700 kcal for a maintenance level considering minimal muscle gain and fat maintenance goals.",
+      "adjustment_factors": "Caloric intake can be adjusted by +/- 100-200 calories based on weekly weight fluctuations and energy levels. If weight consistently decreases and energy levels drop, increase calories slightly. If weight increases more than desired, reduce calories slightly. Adjustments should be made gradually and monitored over 1-2 week periods to assess trends."
+    },
+    "macronutrient_distribution": {
+      "protein": "135g (20% of total calories). Rationale:  While Nishchay favors animal protein, his goals are not focused on muscle hypertrophy. A moderate protein intake of approximately 1.8g per kg of body weight (135g for 75kg) is sufficient to support muscle maintenance and general bodily functions without excessive emphasis on muscle growth, aligning with his 'muscle mass reduction' goal. This recommendation is based on research indicating that for general fitness and health, protein intake around 1.2-2.0g/kg is adequate, with the lower end suitable for those not prioritizing muscle gain.",
+      "carbohydrates": "338g (50% of total calories). Rationale: Carbohydrates are the primary fuel source for moderate-intensity workouts and recreational activities, which are central to Nishchay's fitness approach.  A higher carbohydrate intake supports sustained energy levels, glycogen replenishment, and overall performance in endurance-based activities. This aligns with general dietary guidelines recommending 45-65% of daily calories from carbohydrates, especially for active individuals.",
+      "fats": "60g (30% of total calories). Rationale:  Fats are essential for hormonal balance, vitamin absorption, and overall health.  Including healthy fats supports long-term well-being and provides satiety.  30% of calories from fat is within the recommended range (20-35%) and supports general health without promoting excessive fat gain, consistent with Nishchay's 'fat maintenance or gain' goal. Focus on unsaturated fats from sources like avocados, nuts, seeds, and olive oil.",
+      "explanation": "This macronutrient distribution is designed to support Nishchay's goals of maintaining a lean physique and general fitness while accommodating his dietary preferences. The moderate protein intake supports muscle maintenance without promoting significant hypertrophy. The higher carbohydrate intake fuels his active lifestyle and moderate-intensity workouts.  The moderate fat intake ensures hormonal balance and overall health. This balanced approach aligns with recommendations for general health and fitness, prioritizing sustainable dietary habits over extreme macronutrient ratios often associated with specific physique goals like maximal muscle gain or fat loss."
+    },
+    "daily_meal_plan": {
+      "Monday": {
+        "breakfast": {
+          "name": "Scrambled Eggs with Whole Wheat Toast and Avocado",
+          "calories": "450",
+          "macros": {
+            "protein": "25g",
+            "carbs": "40g",
+            "fats": "25g"
+          },
+          "ingredients": [
+            "3 large eggs",
+            "1 slice whole wheat toast",
+            "1/4 avocado",
+            "Spinach (optional)",
+            "Olive oil for cooking"
+          ],
+          "alternatives": [
+            "Greek yogurt with berries and granola",
+            "Oatmeal with nuts and seeds"
+          ]
+        },
+        "lunch": {
+          "name": "Grilled Chicken Salad with Mixed Greens and Olive Oil Dressing",
+          "calories": "600",
+          "macros": {
+            "protein": "40g",
+            "carbs": "50g",
+            "fats": "30g"
+          },
+          "ingredients": [
+            "4 oz grilled chicken breast",
+            "Mixed greens",
+            "Cherry tomatoes",
+            "Cucumber",
+            "Bell peppers",
+            "1 tbsp olive oil and vinegar dressing",
+            "Whole wheat croutons (optional)"
+          ],
+          "alternatives": [
+            "Tuna salad sandwich on whole wheat bread",
+            "Lentil soup with whole grain bread"
+          ]
+        },
+        "pre_workout": {
+          "name": "Banana with Peanut Butter",
+          "calories": "250",
+          "macros": {
+            "protein": "7g",
+            "carbs": "30g",
+            "fats": "10g"
+          },
+          "ingredients": [
+            "1 medium banana",
+            "2 tbsp peanut butter"
+          ],
+          "alternatives": [
+            "Apple slices with almond butter",
+            "Small whole wheat bagel with jam"
+          ]
+        },
+        "dinner": {
+          "name": "Baked Salmon with Roasted Vegetables",
+          "calories": "700",
+          "macros": {
+            "protein": "45g",
+            "carbs": "70g",
+            "fats": "35g"
+          },
+          "ingredients": [
+            "4 oz baked salmon fillet",
+            "1 cup roasted vegetables (broccoli, carrots, zucchini)",
+            "1 cup quinoa",
+            "Olive oil for roasting"
+          ],
+          "alternatives": [
+            "Chicken stir-fry with brown rice",
+            "Lean beef and vegetable skewers with couscous"
+          ]
+        }
+      },
+      "Tuesday": {
+        "breakfast": {
+          "name": "Oatmeal with Berries and Almonds",
+          "calories": "400",
+          "macros": {
+            "protein": "15g",
+            "carbs": "60g",
+            "fats": "15g"
+          },
+          "ingredients": [
+            "1/2 cup rolled oats",
+            "1 cup berries (mixed)",
+            "1/4 cup almonds",
+            "Water or milk"
+          ],
+          "alternatives": [
+            "Whole wheat toast with avocado and egg",
+            "Smoothie with protein powder, fruit, and spinach"
+          ]
+        },
+        "lunch": {
+          "name": "Turkey and Avocado Wrap",
+          "calories": "550",
+          "macros": {
+            "protein": "35g",
+            "carbs": "45g",
+            "fats": "30g"
+          },
+          "ingredients": [
+            "4 oz sliced turkey breast",
+            "1 whole wheat tortilla",
+            "1/4 avocado",
+            "Lettuce",
+            "Tomato",
+            "Mustard"
+          ],
+          "alternatives": [
+            "Chicken breast salad with whole wheat crackers",
+            "Leftover baked salmon and quinoa"
+          ]
+        },
+        "pre_workout": {
+          "name": "Rice Cakes with Honey",
+          "calories": "150",
+          "macros": {
+            "protein": "2g",
+            "carbs": "30g",
+            "fats": "2g"
+          },
+          "ingredients": [
+            "2 rice cakes",
+            "1 tbsp honey"
+          ],
+          "alternatives": [
+            "Small orange",
+            "Handful of grapes"
+          ]
+        },
+        "dinner": {
+          "name": "Chicken and Vegetable Curry with Brown Rice",
+          "calories": "800",
+          "macros": {
+            "protein": "50g",
+            "carbs": "80g",
+            "fats": "40g"
+          },
+          "ingredients": [
+            "4 oz chicken breast",
+            "1.5 cups mixed vegetables (onions, peppers, peas)",
+            "1 cup brown rice",
+            "Curry sauce (coconut milk based, moderate amount)",
+            "Olive oil for cooking"
+          ],
+          "alternatives": [
+            "Lentil soup with whole wheat bread",
+            "Vegetarian chili with cornbread"
+          ]
+        }
+      },
+      "Wednesday": {
+        "breakfast": {
+          "name": "Greek Yogurt with Fruit and Granola",
+          "calories": "350",
+          "macros": {
+            "protein": "20g",
+            "carbs": "45g",
+            "fats": "10g"
+          },
+          "ingredients": [
+            "1 cup Greek yogurt (plain)",
+            "1/2 cup mixed fruit",
+            "1/4 cup granola (low sugar)"
+          ],
+          "alternatives": [
+            "Scrambled eggs with whole wheat toast",
+            "Oatmeal with fruit and nuts"
+          ]
+        },
+        "lunch": {
+          "name": "Leftover Chicken Curry with Brown Rice",
+          "calories": "650",
+          "macros": {
+            "protein": "40g",
+            "carbs": "70g",
+            "fats": "30g"
+          },
+          "ingredients": [
+            "1.5 servings of Tuesday's Chicken and Vegetable Curry with Brown Rice"
+          ],
+          "alternatives": [
+            "Tuna salad with whole wheat crackers",
+            "Turkey breast and vegetable soup"
+          ]
+        },
+        "pre_workout": {
+          "name": "Apple slices with Almond Butter",
+          "calories": "200",
+          "macros": {
+            "protein": "5g",
+            "carbs": "20g",
+            "fats": "12g"
+          },
+          "ingredients": [
+            "1 medium apple",
+            "1 tbsp almond butter"
+          ],
+          "alternatives": [
+            "Banana",
+            "Small handful of trail mix"
+          ]
+        },
+        "dinner": {
+          "name": "Lean Beef Stir-fry with Vegetables and Noodles",
+          "calories": "750",
+          "macros": {
+            "protein": "50g",
+            "carbs": "80g",
+            "fats": "35g"
+          },
+          "ingredients": [
+            "4 oz lean beef strips",
+            "1.5 cups mixed stir-fry vegetables (broccoli, peppers, onions)",
+            "1 cup whole wheat noodles",
+            "Soy sauce (low sodium)",
+            "Olive oil for cooking"
+          ],
+          "alternatives": [
+            "Salmon with roasted vegetables and quinoa",
+            "Chicken breast with sweet potato and green beans"
+          ]
+        }
+      },
+      "Thursday": {
+        "breakfast": {
+          "name": "Whole Wheat Pancakes with Berries and Maple Syrup",
+          "calories": "450",
+          "macros": {
+            "protein": "15g",
+            "carbs": "70g",
+            "fats": "15g"
+          },
+          "ingredients": [
+            "2 whole wheat pancakes",
+            "1/2 cup berries",
+            "2 tbsp maple syrup",
+            "Optional: sprinkle of nuts"
+          ],
+          "alternatives": [
+            "Oatmeal with fruit and nuts",
+            "Greek yogurt with granola and fruit"
+          ]
+        },
+        "lunch": {
+          "name": "Tuna Salad with Whole Wheat Crackers and Vegetables",
+          "calories": "500",
+          "macros": {
+            "protein": "30g",
+            "carbs": "40g",
+            "fats": "25g"
+          },
+          "ingredients": [
+            "4 oz tuna (canned in water, drained)",
+            "2 tbsp mayonnaise (light)",
+            "Celery",
+            "Onion",
+            "Whole wheat crackers",
+            "Carrot sticks",
+            "Cucumber slices"
+          ],
+          "alternatives": [
+            "Chicken salad sandwich on whole wheat bread",
+            "Leftover lean beef stir-fry"
+          ]
+        },
+        "pre_workout": {
+          "name": "Whole Wheat Toast with Jam",
+          "calories": "180",
+          "macros": {
+            "protein": "4g",
+            "carbs": "35g",
+            "fats": "2g"
+          },
+          "ingredients": [
+            "1 slice whole wheat toast",
+            "2 tbsp jam"
+          ],
+          "alternatives": [
+            "Small bowl of fruit salad",
+            "Energy bar (check for low added sugar)"
+          ]
+        },
+        "dinner": {
+          "name": "Pork Tenderloin with Roasted Sweet Potatoes and Asparagus",
+          "calories": "720",
+          "macros": {
+            "protein": "50g",
+            "carbs": "75g",
+            "fats": "30g"
+          },
+          "ingredients": [
+            "4 oz pork tenderloin",
+            "1 medium sweet potato (roasted)",
+            "1 cup asparagus (roasted)",
+            "Olive oil for roasting",
+            "Seasonings (herbs, spices)"
+          ],
+          "alternatives": [
+            "Chicken breast with roasted vegetables",
+            "Turkey meatballs with marinara sauce and whole wheat pasta"
+          ]
+        }
+      },
+      "Friday": {
+        "breakfast": {
+          "name": "Breakfast Smoothie",
+          "calories": "400",
+          "macros": {
+            "protein": "25g",
+            "carbs": "50g",
+            "fats": "10g"
+          },
+          "ingredients": [
+            "1 scoop protein powder (whey or plant-based)",
+            "1 cup spinach",
+            "1/2 banana",
+            "1/2 cup berries",
+            "1 cup almond milk"
+          ],
+          "alternatives": [
+            "Scrambled eggs with whole wheat toast and avocado",
+            "Greek yogurt with fruit and granola"
+          ]
+        },
+        "lunch": {
+          "name": "Leftover Pork Tenderloin with Sweet Potatoes and Asparagus",
+          "calories": "600",
+          "macros": {
+            "protein": "40g",
+            "carbs": "60g",
+            "fats": "25g"
+          },
+          "ingredients": [
+            "1.25 servings of Thursday's Pork Tenderloin with Sweet Potatoes and Asparagus"
+          ],
+          "alternatives": [
+            "Tuna salad sandwich on whole wheat bread",
+            "Chicken and vegetable soup with whole grain bread"
+          ]
+        },
+        "pre_workout": {
+          "name": "Oatmeal with Fruit",
+          "calories": "200",
+          "macros": {
+            "protein": "5g",
+            "carbs": "40g",
+            "fats": "5g"
+          },
+          "ingredients": [
+            "1/4 cup rolled oats",
+            "1/2 cup fruit (berries or banana)",
+            "Water or milk"
+          ],
+          "alternatives": [
+            "Rice cakes with a thin spread of jam",
+            "Small fruit smoothie"
+          ]
+        },
+        "dinner": {
+          "name": "Homemade Pizza on Whole Wheat Crust with Chicken and Vegetables",
+          "calories": "850",
+          "macros": {
+            "protein": "55g",
+            "carbs": "90g",
+            "fats": "40g"
+          },
+          "ingredients": [
+            "1 whole wheat pizza crust",
+            "1/4 cup tomato sauce",
+            "4 oz cooked chicken breast (shredded)",
+            "1 cup mixed vegetables (peppers, onions, mushrooms)",
+            "1/4 cup part-skim mozzarella cheese"
+          ],
+          "alternatives": [
+            "Chicken fajitas with whole wheat tortillas",
+            "Turkey burgers on whole wheat buns with salad"
+          ]
+        }
+      },
+      "Saturday": {
+        "breakfast": {
+          "name": "Eggs Benedict with Whole Wheat English Muffin (Light Hollandaise)",
+          "calories": "500",
+          "macros": {
+            "protein": "30g",
+            "carbs": "40g",
+            "fats": "30g"
+          },
+          "ingredients": [
+            "2 eggs (poached)",
+            "1 whole wheat English muffin",
+            "2 slices Canadian bacon",
+            "Light Hollandaise sauce (small amount)",
+            "Spinach (optional)"
+          ],
+          "alternatives": [
+            "Omelet with vegetables and cheese",
+            "Breakfast burrito with eggs, beans, and salsa"
+          ]
+        },
+        "lunch": {
+          "name": "Chicken Caesar Salad with Whole Wheat Croutons (Light Dressing)",
+          "calories": "600",
+          "macros": {
+            "protein": "40g",
+            "carbs": "50g",
+            "fats": "30g"
+          },
+          "ingredients": [
+            "4 oz grilled chicken breast",
+            "Romaine lettuce",
+            "Whole wheat croutons",
+            "Parmesan cheese (small amount)",
+            "Light Caesar dressing"
+          ],
+          "alternatives": [
+            "Greek salad with grilled chicken",
+            "Turkey and vegetable wrap"
+          ]
+        },
+        "pre_workout": {
+          "name": "Granola Bar (Low Sugar)",
+          "calories": "150",
+          "macros": {
+            "protein": "5g",
+            "carbs": "20g",
+            "fats": "5g"
+          },
+          "ingredients": [
+            "1 low sugar granola bar"
+          ],
+          "alternatives": [
+            "Small handful of nuts and dried fruit",
+            "Piece of fruit"
+          ]
+        },
+        "dinner": {
+          "name": "Steak with Grilled Vegetables and Baked Potato",
+          "calories": "850",
+          "macros": {
+            "protein": "60g",
+            "carbs": "80g",
+            "fats": "45g"
+          },
+          "ingredients": [
+            "4 oz lean steak (sirloin or flank)",
+            "1 medium baked potato",
+            "1 cup grilled vegetables (peppers, onions, mushrooms)",
+            "1 tbsp olive oil for grilling",
+            "Seasonings (herbs, spices)"
+          ],
+          "alternatives": [
+            "Lamb chops with roasted vegetables",
+            "Venison steak with sweet potato"
+          ]
+        }
+      },
+      "Sunday": {
+        "breakfast": {
+          "name": "Waffles with Fruit and Syrup (Whole Wheat, Moderate Syrup)",
+          "calories": "500",
+          "macros": {
+            "protein": "10g",
+            "carbs": "80g",
+            "fats": "15g"
+          },
+          "ingredients": [
+            "2 whole wheat waffles",
+            "1 cup mixed fruit",
+            "2 tbsp syrup (moderate amount)"
+          ],
+          "alternatives": [
+            "Pancakes with fruit and syrup (whole wheat)",
+            "French toast with fruit (whole wheat bread)"
+          ]
+        },
+        "lunch": {
+          "name": "Leftover Steak with Grilled Vegetables",
+          "calories": "650",
+          "macros": {
+            "protein": "45g",
+            "carbs": "50g",
+            "fats": "35g"
+          },
+          "ingredients": [
+            "1.25 servings of Saturday's Steak with Grilled Vegetables"
+          ],
+          "alternatives": [
+            "Chicken salad on lettuce wraps",
+            "Tuna melt on whole wheat bread (light cheese)"
+          ]
+        },
+        "pre_workout": {
+          "name": "Fruit Salad",
+          "calories": "100",
+          "macros": {
+            "protein": "1g",
+            "carbs": "25g",
+            "fats": "0g"
+          },
+          "ingredients": [
+            "1 cup mixed fruit (melon, berries, grapes)"
+          ],
+          "alternatives": [
+            "Small glass of fruit juice",
+            "A few dates"
+          ]
+        },
+        "dinner": {
+          "name": "Roasted Chicken with Root Vegetables",
+          "calories": "700",
+          "macros": {
+            "protein": "50g",
+            "carbs": "60g",
+            "fats": "30g"
+          },
+          "ingredients": [
+            "4 oz roasted chicken (skinless)",
+            "1 cup roasted root vegetables (potatoes, carrots, parsnips)",
+            "Olive oil for roasting",
+            "Seasonings (herbs, spices)"
+          ],
+          "alternatives": [
+            "Turkey roast with vegetables",
+            "Baked chicken thighs with roasted vegetables"
+          ]
+        }
+      }
+    }
+  }
+}

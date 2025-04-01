@@ -28,12 +28,12 @@ if session_id is None:
 # Store session_id in session state for intra-page access
 st.session_state["session_id"] = session_id
 
-print("Profile Session ID::", session_id)
-
 st.title("Your Profile")
 
 st.subheader("Tell us about yourself:")
 name = st.text_input("Name")
+height = st.text_input("Height (ft' in'')", placeholder="5' 8''")
+weight = st.text_input("Weight (lbs)", placeholder="150 lbs")
 age = st.slider("Age", 16, 80, 20)
 gender = st.selectbox("Gender", ["Male", "Female", "Other"])
 experience = st.selectbox("Experience Level", ["Beginner", "Intermediate", "Advanced"])
@@ -48,7 +48,7 @@ Possible Limitations: I cannot each soy, I have leg injury so I cannot do heavy 
 goals = st.text_area("Fitness Goal", placeholder="""Gain: I want to gain strength and some definition in my abs and legs. 
 I really want to get good ass and butt. Lose: I want to lose fat in my thigh region, torso region, and my upper arm region""")
 
-notes = "Name: " + name + "Age: " + str(age) + "Experience: " + experience + "Notes: " + notes
+notes = "Name: " + name + "Height in ft, in: " + height + "Weight in lbs: "+ weight + "Age: " + str(age) + "Experience: " + experience + "Notes: " + notes
 
 # Wrap your synchronous functions in async functions
 async def async_nutrition_flow(name, notes, goals):
