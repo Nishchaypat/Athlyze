@@ -115,4 +115,4 @@ Athlyze employs a three-step research methodology:
 ## Contact
 **Author**: Nishchay Patel
 **Institution**: Georgia State University
-**Email**: npatel237@student.gsu.edu
+**Email**: npatel237@student.gsu.edu 
