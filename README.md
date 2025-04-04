@@ -1,6 +1,6 @@
 # Athlyze
 A practical and scientific approach towards your physique.
-Agentic RAG for Personalized Fitness and Nutrition
+Agentic RAG for the Personalized Fitness and Nutrition
 
 ## Project Overview
 Existing fitness applications rely on limited algorithms and static models, neglecting advanced machine learning and NLP techniques. Athlyze proposes a novel methodology to address these gaps by leveraging cutting-edge technology for personalized fitness and nutrition recommendations.
