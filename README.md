@@ -79,7 +79,7 @@ Athlyze employs a three-step research methodology:
 
 ## Technology Stack
 * Google Cloud Platform (GCP)
-* GEMINI AI
+* GEMINI AI: google-2.0-flashthinking
 * Langflow
 * AstraDB
 * TensorFlow
@@ -115,4 +115,4 @@ Athlyze employs a three-step research methodology:
 ## Contact
 **Author**: Nishchay Patel
 **Institution**: Georgia State University
-**Email**: npatel237@student.gsu.edu 
+**Email**: npatel237@student.gsu.edu
