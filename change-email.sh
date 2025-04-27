@@ -1,5 +1,4 @@
 #!/bin/sh
-
 git filter-branch --env-filter '
 OLD_EMAIL="nishchay22.03.2003@gmail.com"
 CORRECT_NAME="Nishchay Patel"
