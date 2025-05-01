@@ -101,7 +101,6 @@ Before proceeding, ensure you have:
 * **Google Cloud Account** (for Gemini API)
 * **AstraDB Account**
 
-Note: Refer the requirements.txt
 ---
 
 ## 4. Installation & Setup
