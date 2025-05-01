@@ -108,7 +108,7 @@ Note: Refer the requirements.txt
 
 1.  **Clone the Repository**
     ```bash
-    git clone [[repository-url]](https://github.com/Nishchaypat/Athlyze)
+    git clone https://github.com/Nishchaypat/Athlyze.git
     cd Athlyze
     ```
 
