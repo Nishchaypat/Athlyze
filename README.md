@@ -14,7 +14,6 @@
 10. [Performance Metrics](#10-performance-metrics)
 11. [Troubleshooting](#11-troubleshooting)
 12. [Contact](#12-contact)
-13. [Project Timeline & Future Directions](#13-project-timeline--future-directions)
 
 ---
 
