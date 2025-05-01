@@ -159,7 +159,7 @@ ASTRA_USER_ID              = "YOUR_ASTRA_DB_USERNAME" # Often 'token' when using
     ```
 2.  **Installs your flows under local_flows/ from export option in Langflow**
 
-2.  **Access Locally**
+3.  **Access Locally**
     * Main Interface: [http://localhost:8501](http://localhost:8501)
     * Navigate through pages:
         * Profile
@@ -168,7 +168,7 @@ ASTRA_USER_ID              = "YOUR_ASTRA_DB_USERNAME" # Often 'token' when using
         * Calendar
         * Chat
 
-   **API Endpoints** (if running separately/online):
+ 4. **API Endpoints** (if running separately/online):
     * `POST /api/train` – Returns JSON structure S<sub>m</sub> for training.
     * `POST /api/nutrition` – Returns JSON structure S<sub>n</sub> for nutrition.
 
