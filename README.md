@@ -1,7 +1,5 @@
 # Athlyze – A Personalized Fitness and Nutrition Platform
 
----
-
 ## Table of Contents
 
 1.  [Project Overview](#1-project-overview)
