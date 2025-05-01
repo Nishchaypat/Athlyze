@@ -92,7 +92,7 @@ For a comprehensive look at the research and methodologies behind Athlyze, refer
 ### Project Timeline
 - **Weeks 2-4:** I conducted initial research and designed the APIs using LangFlow.
 - **Weeks 5-7:** I handled data collection, developed ML models, and integrated the database.
-- **Weeks 8-13:** I focused on system integration, testing, and optimization.
+- **Weeks 8-13:** I focused on system integration, testing, optimization, and submission.
 
 ## Troubleshooting
 
