@@ -133,7 +133,7 @@ Note: Refer the requirements.txt
 4.  **Verify LangFlow & AstraDB CLI**
     Follow the official docs to install, log in and steup:
     * LangFlow: [https://docs.langflow.org](https://docs.langflow.org)
-    * AstraDB: [https://docs.datastax.com/en/astra-db](https://docs.datastax.com/en/astra-db)
+    * AstraDB: [https://docs.datastax.com](https://docs.datastax.com/)
 
 ---
 
