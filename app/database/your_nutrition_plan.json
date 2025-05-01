@@ -1,0 +1,568 @@
+{
+  "intro": "This personalized nutrition plan is designed for Nick, a 22-year-old intermediate lifter aiming to increase overall body strength, gain muscle definition in the abs, arms, and shoulders, and reduce fat in the arms and thighs. The plan is grounded in scientific evidence, focusing on sustainable dietary habits and progressive adjustments. It acknowledges personal preferences and lifestyle integration for optimal adherence and results. Feedback and self-monitoring will be incorporated mindfully to track progress and avoid rigid behaviors.",
+  "diet_schedule": {
+    "caloric_needs": {
+      "daily_calories": "3200",
+      "calculation_method": "Mifflin-St Jeor equation with activity multiplier",
+      "adjustment_factors": "Calculated based on estimated Basal Metabolic Rate (BMR) using Mifflin-St Jeor equation, multiplied by an activity factor of 1.6 (for 6 days/week training). This provides a slight caloric surplus to support muscle growth while being mindful of fat loss goals. Caloric intake will be adjusted based on progress and body composition changes every 2-4 weeks."
+    },
+    "macronutrient_distribution": {
+      "protein": "180g (2.2g/kg of body weight)",
+      "carbohydrates": "400g (5g/kg of body weight)",
+      "fats": "89g (1.1g/kg of body weight)",
+      "explanation": "This macronutrient distribution is designed to support muscle protein synthesis, provide adequate energy for intense training, and maintain hormonal balance. \n\n**Protein (2.2g/kg):**  Sufficient protein intake is crucial for muscle hypertrophy and repair, especially during strength training. Research consistently supports higher protein intake for individuals aiming to build muscle mass.  \n\n**Carbohydrates (5g/kg):** Carbohydrates are the primary fuel source for high-intensity workouts. Adequate carbohydrate intake ensures sufficient glycogen stores for training and recovery, optimizing performance and muscle growth. \n\n**Fats (1.1g/kg):** Healthy fats are essential for hormone production, nutrient absorption, and overall health. They also provide sustained energy and contribute to satiety. Prioritize unsaturated fats from sources like avocados, nuts, seeds, and olive oil."
+    },
+    "daily_meal_plan": {
+      "Monday": {
+        "breakfast": {
+          "name": "Greek Yogurt Power Bowl",
+          "calories": "550",
+          "macros": {
+            "protein": "45g",
+            "carbs": "60g",
+            "fats": "15g"
+          },
+          "ingredients": [
+            "2 cups (450g) Greek Yogurt (high protein)",
+            "1 cup mixed berries (antioxidants, fiber)",
+            "1/4 cup granola (complex carbs)",
+            "1 tbsp chia seeds (omega-3s, fiber)",
+            "1/4 cup almonds (healthy fats, protein)"
+          ],
+          "alternatives": [
+            "Oatmeal with protein powder and fruit",
+            "Scrambled eggs with whole-wheat toast and avocado"
+          ]
+        },
+        "lunch": {
+          "name": "Chicken Breast Salad with Quinoa",
+          "calories": "700",
+          "macros": {
+            "protein": "55g",
+            "carbs": "80g",
+            "fats": "20g"
+          },
+          "ingredients": [
+            "6oz (170g) Grilled Chicken Breast (lean protein)",
+            "1 cup cooked quinoa (complex carbs, protein)",
+            "2 cups mixed greens (fiber, vitamins)",
+            "1/2 avocado (healthy fats)",
+            "1/4 cup chickpeas (fiber, protein)",
+            "Lemon vinaigrette dressing (light, healthy fats)"
+          ],
+          "alternatives": [
+            "Tuna salad sandwich on whole wheat bread",
+            "Lentil soup with whole-grain bread"
+          ]
+        },
+        "pre_workout": {
+          "name": "Banana with Peanut Butter",
+          "calories": "250",
+          "macros": {
+            "protein": "7g",
+            "carbs": "30g",
+            "fats": "10g"
+          },
+          "ingredients": [
+            "1 medium banana (quick carbs)",
+            "2 tbsp peanut butter (healthy fats, protein)"
+          ],
+          "alternatives": [
+            "Apple slices with almond butter",
+            "Rice cakes with avocado"
+          ]
+        },
+        "dinner": {
+          "name": "Lean Beef Stir-fry with Brown Rice",
+          "calories": "800",
+          "macros": {
+            "protein": "60g",
+            "carbs": "90g",
+            "fats": "25g"
+          },
+          "ingredients": [
+            "6oz (170g) Lean Beef strips (iron, protein)",
+            "1.5 cups cooked brown rice (complex carbs)",
+            "2 cups mixed vegetables (broccoli, peppers, onions) (fiber, vitamins)",
+            "2 tbsp olive oil (healthy fats)",
+            "Low-sodium soy sauce and ginger (flavor)"
+          ],
+          "alternatives": [
+            "Baked salmon with sweet potato and asparagus",
+            "Chicken and vegetable curry with brown rice"
+          ]
+        }
+      },
+      "Tuesday": {
+        "breakfast": {
+          "name": "Protein Pancakes",
+          "calories": "500",
+          "macros": {
+            "protein": "40g",
+            "carbs": "55g",
+            "fats": "12g"
+          },
+          "ingredients": [
+            "1 scoop protein powder (whey or casein)",
+            "1/2 cup oat flour (complex carbs)",
+            "1/2 cup milk (or almond milk)",
+            "1 egg",
+            "1/2 cup berries",
+            "1 tsp maple syrup (optional)"
+          ],
+          "alternatives": [
+            "Breakfast burrito with eggs, beans, and salsa",
+            "Cottage cheese with fruit and nuts"
+          ]
+        },
+        "lunch": {
+          "name": "Turkey Breast and Avocado Wrap",
+          "calories": "650",
+          "macros": {
+            "protein": "50g",
+            "carbs": "70g",
+            "fats": "25g"
+          },
+          "ingredients": [
+            "6oz (170g) Turkey breast slices (lean protein)",
+            "1 whole-wheat tortilla (complex carbs)",
+            "1/2 avocado (healthy fats)",
+            "1 cup spinach (fiber, vitamins)",
+            "1/4 cup hummus (protein, fiber, healthy fats)",
+            "Tomato and cucumber slices"
+          ],
+          "alternatives": [
+            "Chicken Caesar salad (light dressing)",
+            "Quinoa salad with roasted vegetables and feta cheese"
+          ]
+        },
+        "pre_workout": {
+          "name": "Oatmeal with Fruit",
+          "calories": "300",
+          "macros": {
+            "protein": "8g",
+            "carbs": "50g",
+            "fats": "6g"
+          },
+          "ingredients": [
+            "1 cup cooked oatmeal (complex carbs)",
+            "1/2 cup sliced banana (quick carbs)",
+            "1 tbsp honey (optional)"
+          ],
+          "alternatives": [
+            "Sweet potato fries (baked)",
+            "Fruit smoothie with a small amount of protein powder"
+          ]
+        },
+        "dinner": {
+          "name": "Baked Chicken Thighs with Roasted Vegetables",
+          "calories": "750",
+          "macros": {
+            "protein": "65g",
+            "carbs": "75g",
+            "fats": "30g"
+          },
+          "ingredients": [
+            "6oz (170g) Chicken thighs (protein, flavor)",
+            "1.5 cups roasted vegetables (broccoli, carrots, bell peppers) (fiber, vitamins)",
+            "1 cup roasted potatoes (complex carbs)",
+            "2 tbsp olive oil (healthy fats)",
+            "Herbs and spices (flavor)"
+          ],
+          "alternatives": [
+            "Pork tenderloin with roasted vegetables",
+            "Lentil and vegetable bake"
+          ]
+        }
+      },
+      "Wednesday": {
+        "breakfast": {
+          "name": "Egg and Spinach Scramble",
+          "calories": "400",
+          "macros": {
+            "protein": "35g",
+            "carbs": "10g",
+            "fats": "25g"
+          },
+          "ingredients": [
+            "3 whole eggs (high quality protein, choline)",
+            "1 cup spinach (vitamins, minerals)",
+            "1 tbsp olive oil (healthy fats)",
+            "1 slice whole-wheat toast (complex carbs) optional",
+            "1/4 avocado (healthy fats) optional"
+          ],
+          "alternatives": [
+            "Protein smoothie with spinach and berries",
+            "Hard-boiled eggs with whole-wheat crackers"
+          ]
+        },
+        "lunch": {
+          "name": "Salmon Salad with Sweet Potato",
+          "calories": "700",
+          "macros": {
+            "protein": "50g",
+            "carbs": "85g",
+            "fats": "25g"
+          },
+          "ingredients": [
+            "6oz (170g) Baked Salmon (omega-3s, protein)",
+            "1 medium baked sweet potato (complex carbs, vitamin A)",
+            "2 cups mixed greens (fiber, vitamins)",
+            "1/4 cup walnuts (healthy fats)",
+            "Lemon-dill dressing (light, flavor)"
+          ],
+          "alternatives": [
+            "Chicken and black bean salad",
+            "Tofu stir-fry with brown rice"
+          ]
+        },
+        "pre_workout": {
+          "name": "Rice Cakes with Honey",
+          "calories": "200",
+          "macros": {
+            "protein": "2g",
+            "carbs": "45g",
+            "fats": "2g"
+          },
+          "ingredients": [
+            "2 rice cakes (quick carbs)",
+            "1 tbsp honey (quick energy)"
+          ],
+          "alternatives": [
+            "Small glass of fruit juice",
+            "Dates"
+          ]
+        },
+        "dinner": {
+          "name": "Chicken and Vegetable Skewers with Couscous",
+          "calories": "750",
+          "macros": {
+            "protein": "60g",
+            "carbs": "85g",
+            "fats": "28g"
+          },
+          "ingredients": [
+            "6oz (170g) Chicken breast cubes (protein)",
+            "2 cups mixed vegetables (peppers, zucchini, onions) (fiber, vitamins)",
+            "1 cup cooked couscous (complex carbs)",
+            "2 tbsp olive oil (healthy fats)",
+            "Marinade of choice (low sodium)"
+          ],
+          "alternatives": [
+            "Shrimp scampi with zucchini noodles",
+            "Vegetarian chili with cornbread"
+          ]
+        }
+      },
+      "Thursday": {
+        "breakfast": {
+          "name": "Cottage Cheese and Pineapple",
+          "calories": "450",
+          "macros": {
+            "protein": "40g",
+            "carbs": "50g",
+            "fats": "10g"
+          },
+          "ingredients": [
+            "1 cup (225g) Cottage cheese (high protein, casein)",
+            "1 cup diced pineapple (vitamins, sweetness)",
+            "1/4 cup pumpkin seeds (magnesium, zinc)"
+          ],
+          "alternatives": [
+            "Protein bar (check for sugar content)",
+            "Leftovers from dinner"
+          ]
+        },
+        "lunch": {
+          "name": "Lentil Soup with Whole Wheat Bread",
+          "calories": "600",
+          "macros": {
+            "protein": "30g",
+            "carbs": "90g",
+            "fats": "15g"
+          },
+          "ingredients": [
+            "2 cups lentil soup (fiber, protein, complex carbs)",
+            "2 slices whole-wheat bread (complex carbs, fiber)",
+            "1 tbsp olive oil (for bread) (healthy fats)"
+          ],
+          "alternatives": [
+            "Chickpea salad sandwich",
+            "Leftover chicken salad"
+          ]
+        },
+        "pre_workout": {
+          "name": "Fruit Smoothie",
+          "calories": "280",
+          "macros": {
+            "protein": "5g",
+            "carbs": "60g",
+            "fats": "3g"
+          },
+          "ingredients": [
+            "1 cup mixed berries (antioxidants, quick carbs)",
+            "1/2 banana (quick carbs)",
+            "1/2 cup orange juice (vitamins, quick carbs)",
+            "Water or ice to blend"
+          ],
+          "alternatives": [
+            "Energy gel (for longer workouts)",
+            "Small handful of dried fruit"
+          ]
+        },
+        "dinner": {
+          "name": "Ground Turkey and Black Bean Chili",
+          "calories": "700",
+          "macros": {
+            "protein": "55g",
+            "carbs": "70g",
+            "fats": "25g"
+          },
+          "ingredients": [
+            "6oz (170g) Ground turkey (lean protein)",
+            "1 cup black beans (fiber, protein)",
+            "1 cup diced tomatoes (vitamins)",
+            "1/2 cup corn (complex carbs)",
+            "1/4 avocado (healthy fats) optional",
+            "Spices and herbs (chili powder, cumin, etc.)"
+          ],
+          "alternatives": [
+            "Vegetarian bean chili",
+            "Chicken or beef chili"
+          ]
+        }
+      },
+      "Friday": {
+        "breakfast": {
+          "name": "Whole Wheat Toast with Avocado and Egg",
+          "calories": "480",
+          "macros": {
+            "protein": "25g",
+            "carbs": "45g",
+            "fats": "28g"
+          },
+          "ingredients": [
+            "2 slices whole-wheat toast (complex carbs, fiber)",
+            "1/2 avocado (healthy fats)",
+            "2 eggs (protein, choline)",
+            "Salt and pepper to taste"
+          ],
+          "alternatives": [
+            "Breakfast sandwich on whole-wheat muffin",
+            "Smoked salmon and cream cheese on whole-wheat bagel (smaller portion)"
+          ]
+        },
+        "lunch": {
+          "name": "Tuna Salad Sandwich on Whole Wheat",
+          "calories": "650",
+          "macros": {
+            "protein": "45g",
+            "carbs": "75g",
+            "fats": "25g"
+          },
+          "ingredients": [
+            "6oz (170g) Canned tuna in water (protein, omega-3s)",
+            "2 slices whole-wheat bread (complex carbs, fiber)",
+            "2 tbsp light mayonnaise (lower fat)",
+            "Celery and onion (optional for crunch and flavor)",
+            "Lettuce and tomato"
+          ],
+          "alternatives": [
+            "Chicken wrap with hummus and vegetables",
+            "Leftover chili"
+          ]
+        },
+        "pre_workout": {
+          "name": "Protein Shake with Banana",
+          "calories": "350",
+          "macros": {
+            "protein": "30g",
+            "carbs": "40g",
+            "fats": "5g"
+          },
+          "ingredients": [
+            "1 scoop whey protein powder (fast-digesting protein)",
+            "1 medium banana (quick carbs)",
+            "Water or milk to blend"
+          ],
+          "alternatives": [
+            "Protein bar with moderate carbs",
+            "Greek yogurt with fruit"
+          ]
+        },
+        "dinner": {
+          "name": "Pizza with Whole Wheat Crust and Chicken",
+          "calories": "820",
+          "macros": {
+            "protein": "60g",
+            "carbs": "90g",
+            "fats": "30g"
+          },
+          "ingredients": [
+            "1 whole-wheat pizza crust (complex carbs)",
+            "4oz (113g) Grilled chicken breast slices (protein)",
+            "1/2 cup tomato sauce (vitamins)",
+            "1 cup mixed vegetables (peppers, mushrooms, onions) (fiber, vitamins)",
+            "1/4 cup part-skim mozzarella cheese (lower fat cheese)"
+          ],
+          "alternatives": [
+            "Homemade burgers on whole-wheat buns with lean beef",
+            "Fajitas with chicken or beef and whole-wheat tortillas"
+          ]
+        }
+      },
+      "Saturday": {
+        "breakfast": {
+          "name": "Weekend Brunch: Omelette with Vegetables and Whole Wheat Toast",
+          "calories": "500",
+          "macros": {
+            "protein": "35g",
+            "carbs": "40g",
+            "fats": "25g"
+          },
+          "ingredients": [
+            "3 eggs (protein, choline)",
+            "1 cup mixed vegetables (peppers, onions, mushrooms) (fiber, vitamins)",
+            "1 slice cheese (optional, for flavor)",
+            "1 tbsp olive oil (healthy fats)",
+            "2 slices whole-wheat toast (complex carbs)"
+          ],
+          "alternatives": [
+            "Pancakes with protein powder and fruit (moderate portion)",
+            "French toast with whole-wheat bread (moderate portion)"
+          ]
+        },
+        "lunch": {
+          "name": "Out to Lunch: Grilled Chicken Salad (Choose Wisely)",
+          "calories": "700 (Estimate, adjust portion sizes)",
+          "macros": {
+            "protein": "50g",
+            "carbs": "60g (Estimate, choose complex carbs)",
+            "fats": "30g (Estimate, ask for dressing on the side)"
+          },
+          "ingredients": [
+            "Grilled chicken breast (lean protein)",
+            "Mixed greens (fiber, vitamins)",
+            "Vegetables (fiber, vitamins)",
+            "Light vinaigrette dressing (on the side to control amount)"
+          ],
+          "alternatives": [
+            "Sushi (choose lean fish and brown rice)",
+            "Soup and salad (choose broth-based soup and salad with lean protein)"
+          ]
+        },
+        "pre_workout": {
+          "name": "Optional pre-workout snack if needed based on training time and intensity",
+          "calories": "Variable",
+          "macros": {
+            "protein": "Variable",
+            "carbs": "Variable",
+            "fats": "Variable"
+          },
+          "ingredients": [
+            "Consider options from previous days (banana, rice cakes, fruit)",
+            "Adjust based on hunger and workout duration"
+          ],
+          "alternatives": [
+            "Skip if not hungry or workout is short",
+            "Small protein shake"
+          ]
+        },
+        "dinner": {
+          "name": "Social Dinner: Lean Protein with Vegetables and Smart Carb Choice",
+          "calories": "850 (Estimate, adjust based on choices)",
+          "macros": {
+            "protein": "60g (Aim for lean protein source)",
+            "carbs": "90g (Choose complex carbs where possible)",
+            "fats": "35g (Be mindful of added fats)"
+          },
+          "ingredients": [
+            "Lean protein source (fish, chicken, lean beef)",
+            "Plenty of vegetables (fiber, vitamins)",
+            "Smart carbohydrate choice (brown rice, quinoa, sweet potato)",
+            "Be mindful of sauces and dressings \u2013 ask for them on the side"
+          ],
+          "alternatives": [
+            "Home-cooked meal following similar guidelines",
+            "Restaurant meal with mindful choices and portion control"
+          ]
+        }
+      },
+      "Sunday": {
+        "breakfast": {
+          "name": "Relaxed Breakfast: Waffles with Protein and Fruit (Moderate Portion)",
+          "calories": "600 (Moderate portion)",
+          "macros": {
+            "protein": "30g",
+            "carbs": "80g",
+            "fats": "20g"
+          },
+          "ingredients": [
+            "2 whole-wheat waffles (complex carbs, fiber)",
+            "1 scoop protein powder (mixed with water or milk and used as 'syrup')",
+            "1 cup mixed berries (antioxidants, fiber)",
+            "1 tbsp almond butter (healthy fats) optional"
+          ],
+          "alternatives": [
+            "Pancakes with protein powder and fruit (moderate portion)",
+            "Bagel with cream cheese and smoked salmon (moderate portion)"
+          ]
+        },
+        "lunch": {
+          "name": "Leftovers from Dinner or Simple Salad with Protein",
+          "calories": "600 (Variable based on leftovers)",
+          "macros": {
+            "protein": "40g (Aim for protein source)",
+            "carbs": "60g (Variable)",
+            "fats": "25g (Variable)"
+          },
+          "ingredients": [
+            "Leftovers from Saturday dinner (reheat and enjoy)",
+            "OR Large salad with grilled chicken or fish (if no leftovers)"
+          ],
+          "alternatives": [
+            "Sandwich with lean protein and vegetables",
+            "Soup with whole-grain bread"
+          ]
+        },
+        "pre_workout": {
+          "name": "Active Rest Day - Optional Snack",
+          "calories": "Variable",
+          "macros": {
+            "protein": "Variable",
+            "carbs": "Variable",
+            "fats": "Variable"
+          },
+          "ingredients": [
+            "If engaging in light activity, a small piece of fruit may suffice",
+            "If a more intense activity is planned, consider a pre-workout snack similar to other days"
+          ],
+          "alternatives": [
+            "Water if not hungry",
+            "Small handful of nuts and seeds"
+          ]
+        },
+        "dinner": {
+          "name": "Home-Cooked Comfort Meal: Roast Chicken with Vegetables",
+          "calories": "750",
+          "macros": {
+            "protein": "65g",
+            "carbs": "70g",
+            "fats": "30g"
+          },
+          "ingredients": [
+            "6oz (170g) Roast chicken (protein, flavor)",
+            "1.5 cups roasted root vegetables (carrots, potatoes, parsnips) (complex carbs, fiber)",
+            "2 cups steamed green beans (fiber, vitamins)",
+            "2 tbsp olive oil (for roasting vegetables) (healthy fats)",
+            "Herbs and spices (flavor)"
+          ],
+          "alternatives": [
+            "Shepherd's pie with lean ground beef and sweet potato topping",
+            "Homemade lasagna with whole-wheat noodles and lean meat/vegetables"
+          ]
+        }
+      }
+    }
+  }
+}
