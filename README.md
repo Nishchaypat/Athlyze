@@ -61,7 +61,7 @@ athlyze/
 │   │   ├── Nutrition.py
 │   │   ├── Nutrition Principles.py
 │   │   ├── Profile.py
-│   │   └── Training Priciples.py  # Note: Typo in original, kept as is. Should be 'Principles'
+│   │   └── Training Priciples.py
 │   └── Home.py
 ├── data_preprocessing/
 │   ├── agentic_chunker.py
