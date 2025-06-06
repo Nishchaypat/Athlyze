@@ -9,7 +9,7 @@ annotated-types==0.7.0
 anyio==4.6.2.post1
 appdirs==1.4.4
 asgiref==3.8.1
-#astrapy==1.5.2
+astrapy==1.5.2
 asttokens==2.4.1
 asyncer==0.0.8
 atlassian-python-api==3.41.16
