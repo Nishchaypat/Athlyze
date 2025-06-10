@@ -26,7 +26,6 @@ def main():
     </div>
     """, unsafe_allow_html=True)
 
-    # Features Section
     st.markdown("## Key Features")
     
     features = [
