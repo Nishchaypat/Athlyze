@@ -12,7 +12,7 @@ try:
 except FileNotFoundError:
     pass
 
-# Main Page Design
+
 def main():
     # Custom header with gradient and logo potential
     st.markdown("""
